@@ -6,6 +6,11 @@ import { BackgroundTheme } from "./AppStyle";
 import HeroImage from "./components/Hero/HeroImage";
 import MissionSection from "./sections/Mission/MissionSection";
 import FAQSection from "./sections/FAQ/FAQSection";
+import LocationSection from "./sections/Location/LocationSection";
+import PartnerSection from "./sections/Partners/PartnerSection";
+import ScheduleSection from "./sections/Schedule/ScheduleSection";
+import TeamSection from "./sections/Team/TeamSection";
+import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
 
 const titleNames = [
   { title: "MenuItem1", link: "https://www.google.com" },
@@ -21,6 +26,11 @@ const App: React.FC = () => {
         <AboutSection />
         <MissionSection />
         <FAQSection />
+        <LocationSection />
+        <ScheduleSection />
+        <PartnerSection />
+        <TeamSection />
+        <SocialMediaSection />
       </BackgroundTheme>
     </div>
   );

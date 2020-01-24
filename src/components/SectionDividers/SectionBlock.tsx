@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import BlueSection from "../../static/website-background-4.png";
 import GreenSection from "../../static/website-background-5.png";
 
@@ -7,6 +7,7 @@ import {
   DividerHeader,
   DividerContent,
   DividerFooter,
+  DividerMargin,
   SectionTitle
 } from "./DividerStyle";
 
@@ -41,7 +42,9 @@ function SectionBlock(props: sectionProps) {
         ) : (
           <DividerFooter src={BlueSection} alt="blueSection"></DividerFooter>
         )
-      ) : null}
+      ) : (
+        <DividerMargin />
+      )}
     </Divider>
   );
 }

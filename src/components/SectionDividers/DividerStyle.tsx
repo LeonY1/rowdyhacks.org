@@ -12,6 +12,10 @@ const DividerFooter = styled.img`
   width: 100%;
 `;
 
+const DividerMargin = styled.div`
+  height: 5vh;
+`;
+
 const DividerContent = styled.div`
   display: parent;
   background: ${props => props.theme.main};
@@ -40,6 +44,7 @@ export {
   DividerHeader,
   DividerContent,
   DividerFooter,
+  DividerMargin,
   SectionTitle,
   SectionContent
 };

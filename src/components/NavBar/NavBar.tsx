@@ -1,12 +1,7 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import HomeButton from "./HomeButton";
-import {
-  NavBarTheme,
-  NavBarContainer,
-  MenuList,
-  NavBarMargin
-} from "./NavBarStyle";
+import { NavBarTheme, NavBarContainer, MenuList } from "./NavBarStyle";
 import { MenuLink } from "./Interfaces/MenuLink";
 
 function NavBar(props: { titles: Array<MenuLink> }) {
@@ -23,7 +18,6 @@ function NavBar(props: { titles: Array<MenuLink> }) {
           </MenuList>
         </NavBarContainer>
       </NavBarTheme>
-      <NavBarMargin />
     </>
   );
 }

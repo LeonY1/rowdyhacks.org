@@ -3,7 +3,7 @@ import styled from "styled-components";
 const NavBarTheme = styled.nav`
   position: fixed;
   width: 100vw;
-  background-color: #33ccff;
+  opacity: 100%
   max-height: 70px;
   z-index: 10000;
 `;
