@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import About from "./sections/About/About";
+import AboutSection from "./sections/About/AboutSection";
 import { BackgroundTheme } from "./AppStyle";
+import HeroImage from "./components/Hero/HeroImage";
+import MissionSection from "./sections/Mission/MissionSection";
 
 const titleNames = [
   { title: "MenuItem1", link: "https://www.google.com" },
@@ -13,8 +15,10 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <NavBar titles={titleNames} />
+      <HeroImage></HeroImage>
       <BackgroundTheme>
-        <About />
+        <AboutSection />
+        <MissionSection />
       </BackgroundTheme>
     </div>
   );

@@ -8,6 +8,11 @@ const NavBarTheme = styled.nav`
   z-index: 10000;
 `;
 
+const NavBarMargin = styled.div`
+  display: flex;
+  height: 70px;
+`;
+
 const NavTextContainer = styled.span`
   color: #ffffff;
 `;
@@ -48,6 +53,7 @@ export {
   NavBarTheme,
   LogoImage,
   NavBarContainer,
+  NavBarMargin,
   MenuList,
   MenuItemContainer
 };
