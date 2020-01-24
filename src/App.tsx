@@ -5,6 +5,7 @@ import AboutSection from "./sections/About/AboutSection";
 import { BackgroundTheme } from "./AppStyle";
 import HeroImage from "./components/Hero/HeroImage";
 import MissionSection from "./sections/Mission/MissionSection";
+import FAQSection from "./sections/FAQ/FAQSection";
 
 const titleNames = [
   { title: "MenuItem1", link: "https://www.google.com" },
@@ -19,6 +20,7 @@ const App: React.FC = () => {
       <BackgroundTheme>
         <AboutSection />
         <MissionSection />
+        <FAQSection />
       </BackgroundTheme>
     </div>
   );

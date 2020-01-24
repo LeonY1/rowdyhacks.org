@@ -6,4 +6,8 @@ const MissionTitle: string = "Hello Mission";
 
 const MissionText: string = "Mission Text";
 
-export { AboutTitle, AboutText, MissionTitle, MissionText };
+const FAQTitle: string = "FAQ";
+
+const FAQText: string = "FAQ text";
+
+export { AboutTitle, AboutText, MissionTitle, MissionText, FAQTitle, FAQText };

@@ -31,10 +31,10 @@ function SectionBlock(props: sectionProps) {
 
   return (
     <Divider>
+      {sectionNumber % 2 === 0 && sectionNumber != 0 ? <DividerHeader /> : null}
       <DividerContent {...sectionColors[sectionNumber % 4]}>
         <SectionTitle>{title}</SectionTitle>
       </DividerContent>
-      {sectionNumber % 2 === 0 && sectionNumber != 0 ? <DividerHeader /> : null}
       {sectionNumber % 2 === 0 ? (
         sectionNumber % 4 === 0 ? (
           <DividerFooter src={GreenSection} alt="greenSection"></DividerFooter>

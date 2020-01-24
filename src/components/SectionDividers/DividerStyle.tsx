@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const DividerHeader = styled.div`
   width: 100%;
-  background-image: linear-gradient(#ffffff, #888888);
-  height: 10px;
+  background-image: linear-gradient(#ffffff, #333333);
+  height: 12px;
   opacity: 50%;
   display: parent;
 `;
