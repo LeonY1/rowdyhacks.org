@@ -5,8 +5,12 @@ function ScheduleSection() {
   return (
     <SectionBlock sectionNumber={4}>
       {{
-        title: "Schedule Section",
-        content: "Schedule Content"
+        title: () => {
+          return <div></div>;
+        },
+        content: () => {
+          return <div></div>;
+        }
       }}
     </SectionBlock>
   );

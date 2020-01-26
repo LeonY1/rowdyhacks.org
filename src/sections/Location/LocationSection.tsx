@@ -1,15 +1,22 @@
 import React from "react";
 import SectionBlock from "../../components/SectionDividers/SectionBlock";
+import { LocationTitleWrapper } from "./LocationStyle";
 
 function LocationSection() {
   return (
     <SectionBlock sectionNumber={3}>
       {{
-        title: "Location Title",
-        content: "Location Content"
+        title: LocationTitle,
+        content: () => {
+          return <div></div>;
+        }
       }}
     </SectionBlock>
   );
 }
+
+const LocationTitle: React.FC = () => {
+  return <LocationTitleWrapper>Hello</LocationTitleWrapper>;
+};
 
 export default LocationSection;

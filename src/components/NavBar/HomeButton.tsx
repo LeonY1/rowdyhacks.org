@@ -1,14 +1,13 @@
 import React from "react";
 import rowdyHacksLogo from "../../static/LogoVers2_1.png";
-import { LogoImage, Home, NavTextContainer } from "./NavBarStyle";
+import { LogoImage, Home } from "./NavBarStyle";
 
-const HomeButton: React.FC = (props: {}) => {
+function HomeButton() {
   return (
-    <Home href="https://www.google.com">
+    <Home href="#">
       <LogoImage src={rowdyHacksLogo} alt="rowdyHacksLogo" />
-      <NavTextContainer>RowdyHacks</NavTextContainer>
     </Home>
   );
-};
+}
 
 export default HomeButton;

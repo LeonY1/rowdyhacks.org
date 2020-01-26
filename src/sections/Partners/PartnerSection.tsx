@@ -5,8 +5,12 @@ function PartnerSection() {
   return (
     <SectionBlock sectionNumber={5}>
       {{
-        title: "Sponsor Title",
-        content: "Sponsor Content"
+        title: () => {
+          return <div></div>;
+        },
+        content: () => {
+          return <div></div>;
+        }
       }}
     </SectionBlock>
   );

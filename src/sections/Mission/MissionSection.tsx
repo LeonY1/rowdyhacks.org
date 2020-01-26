@@ -6,8 +6,12 @@ function MissionSection() {
   return (
     <SectionBlock sectionNumber={1}>
       {{
-        title: MissionTitle,
-        content: MissionText
+        title: () => {
+          return <div></div>;
+        },
+        content: () => {
+          return <div></div>;
+        }
       }}
     </SectionBlock>
   );

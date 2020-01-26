@@ -13,8 +13,8 @@ import TeamSection from "./sections/Team/TeamSection";
 import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
 
 const titleNames = [
-  { title: "MenuItem1", link: "https://www.google.com" },
-  { title: "MenuItem2", link: "https://wwww.maps.google.com" }
+  { title: "MenuItem1", link: "" },
+  { title: "MenuItem2", link: "" }
 ];
 
 const App: React.FC = () => {

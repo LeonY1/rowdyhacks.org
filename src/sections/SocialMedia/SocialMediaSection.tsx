@@ -4,7 +4,14 @@ import SectionBlock from "../../components/SectionDividers/SectionBlock";
 function SocialMediaSection() {
   return (
     <SectionBlock sectionNumber={7}>
-      {{ title: "Social Media Section", content: "Social Media Content" }}
+      {{
+        title: () => {
+          return <div></div>;
+        },
+        content: () => {
+          return <div></div>;
+        }
+      }}
     </SectionBlock>
   );
 }
