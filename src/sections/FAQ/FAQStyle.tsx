@@ -13,7 +13,7 @@ const FAQContentWrapper = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 0px 400px;
+  width: 986px;
   font-size: 18px;
   font-family: Helvetica;
 `;
@@ -32,10 +32,18 @@ const FAQQuestionMargin = styled.div`
   height: 20px;
 `;
 
+const FAQContainer = styled.div`
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+`;
+
 export {
   FAQTitleWrapper,
   FAQContentWrapper,
   FAQQuestionWrapper,
   FAQAnswerWrapper,
-  FAQQuestionMargin
+  FAQQuestionMargin,
+  FAQContainer
 };

@@ -5,9 +5,6 @@ function TeamSection() {
   return (
     <SectionBlock sectionNumber={6}>
       {{
-        title: () => {
-          return <div></div>;
-        },
         content: () => {
           return <div></div>;
         }

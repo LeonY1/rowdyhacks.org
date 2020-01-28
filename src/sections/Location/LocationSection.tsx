@@ -6,7 +6,6 @@ function LocationSection() {
   return (
     <SectionBlock sectionNumber={3}>
       {{
-        title: LocationTitle,
         content: () => {
           return <div></div>;
         }

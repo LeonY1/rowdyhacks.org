@@ -39,10 +39,13 @@ const AboutContentDivider = styled.div`
   display: flex;
 `;
 
+const AboutContainer = styled.div``;
+
 export {
   AboutTitleWrapper,
   AboutContentWrapper,
   AboutContentTabWrapper,
   AboutContentImage,
-  AboutContentDivider
+  AboutContentDivider,
+  AboutContainer
 };

@@ -5,9 +5,6 @@ function SocialMediaSection() {
   return (
     <SectionBlock sectionNumber={7}>
       {{
-        title: () => {
-          return <div></div>;
-        },
         content: () => {
           return <div></div>;
         }

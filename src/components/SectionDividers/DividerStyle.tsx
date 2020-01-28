@@ -5,7 +5,6 @@ const DividerHeader = styled.div`
   background-image: linear-gradient(#ffffff, #333333);
   height: 12px;
   opacity: 50%;
-  display: parent;
 `;
 
 const DividerFooter = styled.img`
@@ -17,9 +16,15 @@ const DividerMargin = styled.div`
 `;
 
 const DividerContent = styled.div`
-  display: parent;
+  display: flex;
   background: ${props => props.theme.main};
   padding-top: 70px;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const WhiteDividerContent = styled.div`
+  display: flex;
 `;
 
 const SectionTitle = styled.div`
@@ -46,5 +51,6 @@ export {
   DividerFooter,
   DividerMargin,
   SectionTitle,
-  SectionContent
+  SectionContent,
+  WhiteDividerContent
 };

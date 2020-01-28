@@ -5,7 +5,8 @@ import {
   FAQContentWrapper,
   FAQQuestionWrapper,
   FAQAnswerWrapper,
-  FAQQuestionMargin
+  FAQQuestionMargin,
+  FAQContainer
 } from "./FAQStyle";
 import { FAQQuestions, FAQAnswers } from "../SectionConstant";
 
@@ -13,30 +14,28 @@ function FAQSection() {
   return (
     <SectionBlock sectionNumber={2}>
       {{
-        title: FAQTitle,
         content: FAQContent
       }}
     </SectionBlock>
   );
 }
 
-const FAQTitle: React.FC = () => {
-  return <FAQTitleWrapper>FAQ</FAQTitleWrapper>;
-};
-
 const FAQContent: React.FC = () => {
   return (
-    <FAQContentWrapper>
-      {FAQQuestions.map((value, index) => {
-        return (
-          <>
-            <FAQQuestionWrapper>{value}</FAQQuestionWrapper>
-            <FAQAnswerWrapper>{FAQAnswers[index]}</FAQAnswerWrapper>
-            {index < FAQQuestions.length - 1 ? <FAQQuestionMargin /> : null}
-          </>
-        );
-      })}
-    </FAQContentWrapper>
+    <FAQContainer>
+      <FAQTitleWrapper>FAQ</FAQTitleWrapper>
+      <FAQContentWrapper>
+        {FAQQuestions.map((value, index) => {
+          return (
+            <>
+              <FAQQuestionWrapper>{value}</FAQQuestionWrapper>
+              <FAQAnswerWrapper>{FAQAnswers[index]}</FAQAnswerWrapper>
+              {index < FAQQuestions.length - 1 ? <FAQQuestionMargin /> : null}
+            </>
+          );
+        })}
+      </FAQContentWrapper>
+    </FAQContainer>
   );
 };
 

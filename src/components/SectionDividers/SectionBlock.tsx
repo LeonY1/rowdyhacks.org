@@ -8,13 +8,13 @@ import {
   DividerHeader,
   DividerContent,
   DividerFooter,
-  DividerMargin
+  DividerMargin,
+  WhiteDividerContent
 } from "./DividerStyle";
 
 interface sectionProps {
   sectionNumber: number;
   children: {
-    title: React.FC;
     content: React.FC;
   };
 }
@@ -30,17 +30,20 @@ const sectionColors = [
 
 function SectionBlock(props: sectionProps) {
   const { sectionNumber } = props;
-  const { title, content } = props.children;
+  const { content } = props.children;
 
   return (
     <Divider>
       {sectionNumber % 2 === 0 && sectionNumber !== 0 ? (
         <DividerHeader />
       ) : null}
-      <DividerContent {...sectionColors[sectionNumber % 6]}>
-        {title({ children: null })}
-        {content({ children: null })}
-      </DividerContent>
+      {sectionNumber % 2 === 0 ? (
+        <DividerContent {...sectionColors[sectionNumber % 6]}>
+          {content({ children: null })}
+        </DividerContent>
+      ) : (
+        <WhiteDividerContent>{content({ children: null })}</WhiteDividerContent>
+      )}
       {(() => {
         switch (sectionNumber % 6) {
           case 0:

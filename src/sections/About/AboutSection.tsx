@@ -10,33 +10,32 @@ import {
   AboutContentWrapper,
   AboutContentTabWrapper,
   AboutContentImage,
-  AboutContentDivider
+  AboutContentDivider,
+  AboutContainer
 } from "./AboutStyle";
 
 const AboutSection: React.FC = () => {
   return (
     <SectionBlock sectionNumber={0}>
       {{
-        title: AboutTitle,
         content: AboutContent
       }}
     </SectionBlock>
   );
 };
 
-const AboutTitle: React.FC = () => {
-  return <AboutTitleWrapper>ABOUT</AboutTitleWrapper>;
-};
-
 const AboutContent: React.FC = () => {
   return (
-    <AboutContentWrapper>
-      <AboutContentTab content={AboutTextBlock1} name={"Handshake"} />
-      <AboutContentDivider />
-      <AboutContentTab content={AboutTextBlock2} name={"People"} />
-      <AboutContentDivider />
-      <AboutContentTab content={AboutTextBlock3} name={"Circuit"} />
-    </AboutContentWrapper>
+    <AboutContainer>
+      <AboutTitleWrapper>ABOUT</AboutTitleWrapper>
+      <AboutContentWrapper>
+        <AboutContentTab content={AboutTextBlock1} name={"Handshake"} />
+        <AboutContentDivider />
+        <AboutContentTab content={AboutTextBlock2} name={"People"} />
+        <AboutContentDivider />
+        <AboutContentTab content={AboutTextBlock3} name={"Circuit"} />
+      </AboutContentWrapper>
+    </AboutContainer>
   );
 };
 
