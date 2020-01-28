@@ -27,11 +27,11 @@ const FAQContent: React.FC = () => {
       <FAQContentWrapper>
         {FAQQuestions.map((value, index) => {
           return (
-            <>
+            <div key={"Question" + index}>
               <FAQQuestionWrapper>{value}</FAQQuestionWrapper>
               <FAQAnswerWrapper>{FAQAnswers[index]}</FAQAnswerWrapper>
               {index < FAQQuestions.length - 1 ? <FAQQuestionMargin /> : null}
-            </>
+            </div>
           );
         })}
       </FAQContentWrapper>

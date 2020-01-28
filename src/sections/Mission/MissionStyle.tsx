@@ -18,7 +18,7 @@ const MissionStatementWrapper = styled.div`
   padding: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -32,6 +32,7 @@ const MissionTextWrapper = styled.div`
 const MissionTitleWrapper = styled.div`
   font-size: 55px;
   font-weight: 700;
+  margin-bottom: 30px;
 `;
 
 export {

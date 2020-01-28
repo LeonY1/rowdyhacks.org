@@ -24,7 +24,6 @@ const MissionContent: React.FC = () => {
   return (
     <MissionContentWrapper>
       <MissionImageWrapper src={MissionImage} alt="MissionImage" />
-      <div></div>
       <MissionStatementWrapper>
         <MissionTitleWrapper>{MissionTitle}</MissionTitleWrapper>
         <MissionTextWrapper>{MissionText}</MissionTextWrapper>

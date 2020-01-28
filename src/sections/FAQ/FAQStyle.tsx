@@ -20,12 +20,14 @@ const FAQContentWrapper = styled.div`
 
 const FAQQuestionWrapper = styled.div`
   color: #fcf89c;
+  display: flex;
 `;
 
 const FAQAnswerWrapper = styled.div`
   color: #ffffff;
   text-align: left;
   margin-bottom: 20px;
+  display: flex;
 `;
 
 const FAQQuestionMargin = styled.div`

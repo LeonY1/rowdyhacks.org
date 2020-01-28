@@ -30,6 +30,9 @@ const FAQAnswers: Array<string> = [
   "Please e-mail team@rowdyhacks.org. We will get back to you and give you the best support."
 ];
 
+const LocationText: string =
+  "RowdyHacks will be held at UTSA's Main Campus at the HEB Ballrooms in the UTSA Student Union.";
+
 export {
   AboutTextBlock1,
   AboutTextBlock2,
@@ -37,5 +40,6 @@ export {
   MissionTitle,
   MissionText,
   FAQQuestions,
-  FAQAnswers
+  FAQAnswers,
+  LocationText
 };

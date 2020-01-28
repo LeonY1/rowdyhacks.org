@@ -6,7 +6,12 @@ function ScheduleSection() {
     <SectionBlock sectionNumber={4}>
       {{
         content: () => {
-          return <div></div>;
+          return (
+            <>
+              <div>Schedule</div>
+              <div>Coming Soon!</div>
+            </>
+          );
         }
       }}
     </SectionBlock>
