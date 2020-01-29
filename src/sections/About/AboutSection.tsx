@@ -11,8 +11,10 @@ import {
   AboutContentTabWrapper,
   AboutContentImage,
   AboutContentDivider,
-  AboutContainer
+  AboutContainer,
+  AboutTextWrapper
 } from "./AboutStyle";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 const AboutSection: React.FC = () => {
   return (
@@ -25,14 +27,15 @@ const AboutSection: React.FC = () => {
 };
 
 const AboutContent: React.FC = () => {
+  const windowWidth = useWindowWidth();
   return (
     <AboutContainer>
       <AboutTitleWrapper>ABOUT</AboutTitleWrapper>
       <AboutContentWrapper>
         <AboutContentTab content={AboutTextBlock1} name={"Handshake"} />
-        <AboutContentDivider />
+        {windowWidth >= 760 ? <AboutContentDivider /> : null}
         <AboutContentTab content={AboutTextBlock2} name={"People"} />
-        <AboutContentDivider />
+        {windowWidth >= 760 ? <AboutContentDivider /> : null}
         <AboutContentTab content={AboutTextBlock3} name={"Circuit"} />
       </AboutContentWrapper>
     </AboutContainer>
@@ -55,7 +58,7 @@ const AboutContentTab: React.FC<AboutDetails> = (props: {
         src={require("../../static/" + name + ".png")}
         alt={name}
       />
-      <span>{content}</span>
+      <AboutTextWrapper>{content}</AboutTextWrapper>
     </AboutContentTabWrapper>
   );
 };

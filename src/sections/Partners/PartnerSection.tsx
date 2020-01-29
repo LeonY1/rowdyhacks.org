@@ -5,12 +5,16 @@ function PartnerSection() {
   return (
     <SectionBlock sectionNumber={5}>
       {{
-        content: () => {
-          return <div></div>;
-        }
+        content: PartnerContent
       }}
     </SectionBlock>
   );
 }
+
+const goldPartners = ["AFCS", "Frost Bank"];
+
+const PartnerContent: React.FC = () => {
+  return <div></div>;
+};
 
 export default PartnerSection;

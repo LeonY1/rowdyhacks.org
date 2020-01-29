@@ -6,6 +6,9 @@ const FAQTitleWrapper = styled.div`
   color: #ffffff;
   font-size: 48px;
   margin-bottom: 30px;
+  @media (max-width: 760px) {
+    font-size: 36px;
+  }
 `;
 
 const FAQContentWrapper = styled.div`
@@ -13,14 +16,23 @@ const FAQContentWrapper = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 986px;
+  width: 760px;
   font-size: 18px;
   font-family: Helvetica;
+  @media (max-width: 760px) {
+    width: 90vw;
+    font-size: 14px;
+    align-items: left;
+  }
 `;
 
 const FAQQuestionWrapper = styled.div`
   color: #fcf89c;
   display: flex;
+  text-align: left;
+  @media (max-width: 760px) {
+    width: 80vw;
+  }
 `;
 
 const FAQAnswerWrapper = styled.div`
@@ -32,8 +44,10 @@ const FAQAnswerWrapper = styled.div`
 
 const FAQQuestionMargin = styled.div`
   height: 20px;
+  @media (max-width: 760px) {
+    height: 10px;
+  }
 `;
-
 const FAQContainer = styled.div`
   flex-direction: column;
   display: flex;
