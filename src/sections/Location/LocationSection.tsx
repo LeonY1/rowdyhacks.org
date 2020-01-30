@@ -23,7 +23,7 @@ function LocationSection() {
 
 const LocationContent: React.FC = () => {
   return (
-    <LocationContainer>
+    <LocationContainer id="location">
       <LocationWrapper>
         <LocationTitleWrapper>LOCATION</LocationTitleWrapper>
         <LocationTitleDivider />

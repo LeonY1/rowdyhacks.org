@@ -29,7 +29,7 @@ const AboutSection: React.FC = () => {
 const AboutContent: React.FC = () => {
   const windowWidth = useWindowWidth();
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutTitleWrapper>ABOUT</AboutTitleWrapper>
       <AboutContentWrapper>
         <AboutContentTab content={AboutTextBlock1} name={"Handshake"} />

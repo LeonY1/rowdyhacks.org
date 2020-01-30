@@ -13,10 +13,10 @@ import TeamSection from "./sections/Team/TeamSection";
 import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
 
 const titleNames = [
-  { title: "About", link: "" },
-  { title: "FAQ", link: "" },
-  { title: "Location", link: "" },
-  { title: "Partners", link: "" }
+  { title: "About", link: "#about" },
+  { title: "FAQ", link: "#faq" },
+  { title: "Location", link: "#location" },
+  { title: "Partners", link: "#partners" }
 ];
 
 const App: React.FC = () => {

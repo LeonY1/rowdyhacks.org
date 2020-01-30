@@ -22,7 +22,7 @@ function FAQSection() {
 
 const FAQContent: React.FC = () => {
   return (
-    <FAQContainer>
+    <FAQContainer id="faq">
       <FAQTitleWrapper>FAQ</FAQTitleWrapper>
       <FAQContentWrapper>
         {FAQQuestions.map((value, index) => {
