@@ -45,6 +45,7 @@ function SectionBlock(props: sectionProps) {
         <WhiteDividerContent>{content({ children: null })}</WhiteDividerContent>
       )}
       {(() => {
+        if (sectionNumber === 6) return null;
         switch (sectionNumber % 6) {
           case 0:
             return (

@@ -6,7 +6,7 @@ const LocationContainer = styled.div`
   justify-content: space-between;
   width: 100%;
 
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@ const LocationWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     width: 90vw;
     padding: 10px;
     align-items: center;
@@ -33,7 +33,7 @@ const LocationTitleWrapper = styled.div`
   font-weight: 700;
   font-size: 50px;
   text-align: left;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     font-size: 36px;
     text-align: center;
   }
@@ -44,7 +44,7 @@ const LocationTitleDivider = styled.div`
   height: 5px;
   background: #4d4d4d;
   margin: 30px 0px;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     margin: 10px;
   }
 `;
@@ -52,7 +52,7 @@ const LocationTitleDivider = styled.div`
 const LocationTextWrapper = styled.div`
   font-size: 20px;
   width: 350px;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     width: 80vw;
     font-size: 14px;
   }
@@ -61,7 +61,7 @@ const LocationTextWrapper = styled.div`
 
 const LocationImageWrapper = styled.img`
   width: 50vw;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     width: 90vw;
   }
 `;

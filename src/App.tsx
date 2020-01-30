@@ -13,8 +13,10 @@ import TeamSection from "./sections/Team/TeamSection";
 import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
 
 const titleNames = [
-  { title: "MenuItem1", link: "" },
-  { title: "MenuItem2", link: "" }
+  { title: "About", link: "" },
+  { title: "FAQ", link: "" },
+  { title: "Location", link: "" },
+  { title: "Partners", link: "" }
 ];
 
 const App: React.FC = () => {
@@ -27,9 +29,7 @@ const App: React.FC = () => {
         <MissionSection />
         <FAQSection />
         <LocationSection />
-        <ScheduleSection />
         <PartnerSection />
-        <TeamSection />
         <SocialMediaSection />
       </BackgroundTheme>
     </div>

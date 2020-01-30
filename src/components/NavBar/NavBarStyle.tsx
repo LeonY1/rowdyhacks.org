@@ -5,16 +5,18 @@ const NavBarTheme = styled.nav`
   width: 100vw;
   opacity: 100%
   max-height: 70px;
+  
   z-index: 10000;
 `;
 
 const NavBarMargin = styled.div`
   display: flex;
   height: 70px;
+  background: #cbebe8;
 `;
 
 const NavTextContainer = styled.span`
-  color: #ffffff;
+  color: #007380;
 `;
 
 const Home = styled.a`

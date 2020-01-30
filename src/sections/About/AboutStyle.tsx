@@ -26,8 +26,8 @@ const AboutContentWrapper = styled.div`
   }
   @media (max-width: 630px) {
     flex-direction: column;
-    padding: 10px 0px 0px 10px;
-    margin: 10px 10px 30px 10px;
+    padding: 10px 0px 0px 0px;
+    margin: 10px 0px 30px 0px;
   }
 `;
 
@@ -49,7 +49,7 @@ const AboutContentTabWrapper = styled.div`
     width: 90vw;
   }
   line-height: 135%;
-  padding: 10px 20px 0px 20px;
+  padding: 10px 0px 0px 20px;
 `;
 
 const AboutContentImage = styled.img`

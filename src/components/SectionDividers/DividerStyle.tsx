@@ -12,7 +12,7 @@ const DividerFooter = styled.img`
 `;
 
 const DividerMargin = styled.div`
-  height: 5vh;
+  height: 5%;
 `;
 
 const DividerContent = styled.div`
