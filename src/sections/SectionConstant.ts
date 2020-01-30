@@ -33,6 +33,12 @@ const FAQAnswers: Array<string> = [
 const LocationText: string =
   "RowdyHacks will be held at UTSA's Main Campus at the HEB Ballrooms in the UTSA Student Union.";
 
+const SocialMediaText: string =
+  "For live updates and announcements, follow us on social media!";
+
+const FooterText: string =
+  "RowdyHacks is hosted by Roadrunners from UTSA. If you're interested in becoming a partner, please e-mail ";
+
 export {
   AboutTextBlock1,
   AboutTextBlock2,
@@ -41,5 +47,7 @@ export {
   MissionText,
   FAQQuestions,
   FAQAnswers,
-  LocationText
+  LocationText,
+  SocialMediaText,
+  FooterText
 };

@@ -12,7 +12,7 @@ const GoldPartnerContainer = styled.div`
 `;
 
 const SilverPartnerImage = styled.img`
-  height: 150px;
+  height: 125px;
   margin: 10px;
 `;
 
@@ -26,14 +26,14 @@ const SilverPartnerContainer = styled.div`
 `;
 
 const BronzePartnerImage = styled.img`
-  height: 100px;
+  height: 85px;
   margin: 10px;
 `;
 
 const BronzePartnerContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 `;
 
@@ -41,6 +41,8 @@ const PartnerContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
 `;
 
 const PartnerTitleWrapper = styled.div`
