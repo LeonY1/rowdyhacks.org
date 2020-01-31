@@ -16,7 +16,7 @@ const NavBarMargin = styled.div`
 `;
 
 const NavTextContainer = styled.span`
-  color: #007380;
+  color: #034872;
 `;
 
 const Home = styled.a`

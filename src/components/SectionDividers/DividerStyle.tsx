@@ -9,6 +9,7 @@ const DividerHeader = styled.div`
 
 const DividerFooter = styled.img`
   width: 100%;
+  z-index: 9999;
 `;
 
 const DividerMargin = styled.div`
@@ -17,8 +18,10 @@ const DividerMargin = styled.div`
 
 const DividerContent = styled.div`
   display: flex;
+  margin-top: ${props => props.theme.margin}px;
+  padding-top: calc(${props => props.theme.margin}px * -1);
   background: ${props => props.theme.main};
-  padding-top: 70px;
+  z-index: ${props => props.theme.zindex};
   flex-direction: column;
   align-items: center;
 `;

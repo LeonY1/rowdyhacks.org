@@ -76,4 +76,52 @@ const animationObjects: Array<AnimationInput> = [
   }
 ];
 
-export { animationObjects };
+const stillObjects = [
+  {
+    imageSrc: "human-1",
+    direction: "left",
+    theme: {
+      top: 594,
+      dist: 169,
+      width: 160
+    }
+  },
+  {
+    imageSrc: "human-2",
+    direction: "right",
+    theme: {
+      top: 623,
+      dist: 444,
+      width: 154
+    }
+  },
+  {
+    imageSrc: "human-3",
+    direction: "left",
+    theme: {
+      top: 616,
+      dist: 833,
+      width: 170
+    }
+  },
+  {
+    imageSrc: "human-4",
+    direction: "left",
+    theme: {
+      top: 622,
+      dist: 1170,
+      width: 148
+    }
+  },
+  {
+    imageSrc: "human-5",
+    direction: "right",
+    theme: {
+      top: 616,
+      dist: 1498,
+      width: 140
+    }
+  }
+];
+
+export { animationObjects, stillObjects };

@@ -1,16 +1,12 @@
 import React from "react";
-import BlueSection from "../../static/website-background-4.png";
-import GreenSection from "../../static/website-background-5.png";
-import PinkSection from "../../static/website-background-6.png";
 
 import {
   Divider,
-  DividerHeader,
   DividerContent,
   DividerFooter,
-  DividerMargin,
-  WhiteDividerContent
+  DividerMargin
 } from "./DividerStyle";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 interface sectionProps {
   sectionNumber: number;
@@ -19,58 +15,66 @@ interface sectionProps {
   };
 }
 
-const sectionColors = [
-  { theme: { main: "#5faa86" } },
-  { theme: { main: "white" } },
-  { theme: { main: "#007380" } },
-  { theme: { main: "white" } },
-  { theme: { main: "#cc64b1" } },
-  { theme: { main: "white" } }
-];
-
 function SectionBlock(props: sectionProps) {
   const { sectionNumber } = props;
   const { content } = props.children;
+  const screenWidth = useWindowWidth();
+  const sectionColors = [
+    {
+      theme: {
+        main: "#5faa86",
+        src: "banner-green",
+        altName: "greenBanner",
+        margin: 0,
+        zindex: 4
+      }
+    },
+    {
+      theme: {
+        main: "#027380",
+        src: "banner-blue",
+        altName: "blueBanner",
+        margin: ((170 * screenWidth) / 1988) * -1,
+        zindex: 3
+      }
+    },
+    {
+      theme: {
+        main: "#cc64b1",
+        src: "banner-pink",
+        altName: "pinkBanner",
+        margin: ((170 * screenWidth) / 1988) * -1,
+        zindex: 2
+      }
+    },
+    {
+      theme: {
+        main: "#fff6c2",
+        src: "banner-yellow",
+        altName: "yellowBanner",
+        margin: ((170 * screenWidth) / 1988) * -1,
+        zindex: 1
+      }
+    },
+    { theme: { main: "#ffffff", src: null } },
+    { theme: { main: "#5faa86", src: null } }
+  ];
+
+  const sectionTheme = sectionColors[sectionNumber];
 
   return (
     <Divider>
-      {sectionNumber % 2 === 0 && sectionNumber !== 0 ? (
-        <DividerHeader />
-      ) : null}
-      {sectionNumber % 2 === 0 ? (
-        <DividerContent {...sectionColors[sectionNumber % 6]}>
-          {content({ children: null })}
-        </DividerContent>
-      ) : (
-        <WhiteDividerContent>{content({ children: null })}</WhiteDividerContent>
-      )}
+      <DividerContent {...sectionTheme}>
+        {content({ children: null })}
+      </DividerContent>
       {(() => {
-        if (sectionNumber === 6) return null;
-        switch (sectionNumber % 6) {
-          case 0:
-            return (
-              <DividerFooter
-                src={GreenSection}
-                alt="greenSection"
-              ></DividerFooter>
-            );
-          case 2:
-            return (
-              <DividerFooter
-                src={BlueSection}
-                alt="blueSection"
-              ></DividerFooter>
-            );
-          case 4:
-            return (
-              <DividerFooter
-                src={PinkSection}
-                alt="pinkSection"
-              ></DividerFooter>
-            );
-          default:
-            return <DividerMargin />;
-        }
+        if (sectionTheme.theme.src === null) return <DividerMargin />;
+        return (
+          <DividerFooter
+            src={require("../../static/" + sectionTheme.theme.src + ".png")}
+            alt={sectionTheme.theme.altName}
+          />
+        );
       })()}
     </Divider>
   );
