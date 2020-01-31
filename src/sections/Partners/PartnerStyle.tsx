@@ -3,6 +3,9 @@ import styled from "styled-components";
 const GoldPartnerImage = styled.img`
   height: 200px;
   margin: 10px;
+  @media (max-width: 800px) {
+    height: 85px;
+  }
 `;
 
 const GoldPartnerContainer = styled.div`
@@ -14,6 +17,9 @@ const GoldPartnerContainer = styled.div`
 const SilverPartnerImage = styled.img`
   height: 125px;
   margin: 10px;
+  @media (max-width: 800px) {
+    height: 67.5px;
+  }
 `;
 
 const SilverPartnerContainer = styled.div`
@@ -28,6 +34,9 @@ const SilverPartnerContainer = styled.div`
 const BronzePartnerImage = styled.img`
   height: 85px;
   margin: 10px;
+  @media (max-width: 800px) {
+    height: 42.5px;
+  }
 `;
 
 const BronzePartnerContainer = styled.div`

@@ -13,7 +13,7 @@ import {
 
 function PartnerSection() {
   return (
-    <SectionBlock sectionNumber={3}>
+    <SectionBlock sectionNumber={4}>
       {{
         content: PartnerContent
       }}

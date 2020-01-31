@@ -3,14 +3,12 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import AboutSection from "./sections/About/AboutSection";
 import { BackgroundTheme } from "./AppStyle";
-import HeroImage from "./components/Hero/HeroImage";
 import MissionSection from "./sections/Mission/MissionSection";
 import FAQSection from "./sections/FAQ/FAQSection";
 import LocationSection from "./sections/Location/LocationSection";
 import PartnerSection from "./sections/Partners/PartnerSection";
-import ScheduleSection from "./sections/Schedule/ScheduleSection";
-import TeamSection from "./sections/Team/TeamSection";
 import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
+import Hero from "./sections/Hero/HeroImage";
 
 const titleNames = [
   { title: "About", link: "#about" },
@@ -23,7 +21,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <NavBar titles={titleNames} />
-      <HeroImage></HeroImage>
+      <Hero />
       <BackgroundTheme>
         <AboutSection />
         <MissionSection />

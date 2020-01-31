@@ -1,3 +1,5 @@
+import SocialLogo from "./SocialLogo";
+
 const AboutTextBlock1: string =
   "It's a great opportunity to network, meet new people, and build your connnections";
 const AboutTextBlock2: string =
@@ -39,6 +41,29 @@ const SocialMediaText: string =
 const FooterText: string =
   "RowdyHacks is hosted by Roadrunners from UTSA. If you're interested in becoming a partner, please e-mail ";
 
+const socialLogos: Array<SocialLogo> = [
+  {
+    link: "https://twitter.com/rowdyhacks",
+    src: "twitter",
+    altName: "Twitter"
+  },
+  {
+    link: "https://facebook.com/rowdyhacks",
+    src: "facebook",
+    altName: "Facebook"
+  },
+  {
+    link: "https://www.linkedin.com/company/51637167",
+    src: "linkedin",
+    altName: "Linkedin"
+  },
+  {
+    link: "https://www.instagram.com/rowdyhack",
+    src: "instagram",
+    altName: "Instagram"
+  }
+];
+
 export {
   AboutTextBlock1,
   AboutTextBlock2,
@@ -49,5 +74,6 @@ export {
   FAQAnswers,
   LocationText,
   SocialMediaText,
-  FooterText
+  FooterText,
+  socialLogos
 };

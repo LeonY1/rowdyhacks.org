@@ -33,7 +33,8 @@ const AboutContentWrapper = styled.div`
 
 const AboutTextWrapper = styled.span`
   @media (max-width: 630px) {
-    padding: 30px 0px 0px 10px;
+    padding: 0px;
+    width: auto;
   }
 `;
 

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const SocialMediaWrapper = styled.div``;
+const SocialMediaWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const SocialMediaTitleWrapper = styled.div`
   font-size: 55px;

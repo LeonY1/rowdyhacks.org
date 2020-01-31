@@ -10,46 +10,17 @@ import {
   EmailLink,
   CodeofConduct
 } from "./SocialMediaStyle";
-import { SocialMediaText, FooterText } from "../SectionConstant";
+import { SocialMediaText, FooterText, socialLogos } from "../SectionConstant";
 
 function SocialMediaSection() {
   return (
-    <SectionBlock sectionNumber={6}>
+    <SectionBlock sectionNumber={5}>
       {{
         content: SocialMediaContent
       }}
     </SectionBlock>
   );
 }
-
-interface SocialLogo {
-  link: string;
-  src: string;
-  altName: string;
-}
-
-const socialLogos: Array<SocialLogo> = [
-  {
-    link: "https://twitter.com/rowdyhacks",
-    src: "twitter",
-    altName: "Twitter"
-  },
-  {
-    link: "https://facebook.com/rowdyhacks",
-    src: "facebook",
-    altName: "Facebook"
-  },
-  {
-    link: "https://www.linkedin.com/company/51637167",
-    src: "linkedin",
-    altName: "Linkedin"
-  },
-  {
-    link: "https://www.instagram.com/rowdyhack",
-    src: "instagram",
-    altName: "Instagram"
-  }
-];
 
 const SocialMediaContent: React.FC = () => {
   return (
@@ -82,6 +53,7 @@ const SocialMediaContent: React.FC = () => {
         <a
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
+          rel="noopener noreferrer"
         >
           MLH Code of Conduct
         </a>
