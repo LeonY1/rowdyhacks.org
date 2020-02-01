@@ -47,10 +47,30 @@ const HeroBg = styled.img`
   z-index: 10;
 `;
 
+const TitleWrapper = styled.div`
+  font-size: 100px;
+`;
+
+const HeroTitleWrapper = styled.div`
+  top: 80px;
+  left: 500px;
+  position: absolute;
+  z-index: 50;
+`;
+
+const HeroTitleContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  z-index: 50;
+`;
+
 export {
   RightAnimation,
   LeftAnimation,
   StillAnimation,
   TurnedStillAnimation,
-  HeroBg
+  HeroBg,
+  TitleWrapper,
+  HeroTitleContainer,
+  HeroTitleWrapper
 };

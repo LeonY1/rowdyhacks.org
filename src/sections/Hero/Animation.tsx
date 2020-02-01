@@ -1,5 +1,5 @@
 import React from "react";
-import AnimationProps from "./AnimationProps";
+import AnimationProps from "./Interfaces/AnimationProps";
 import { RightAnimation, LeftAnimation } from "./HeroStyle";
 
 const Animation: React.FC<AnimationProps> = props => {
