@@ -5,7 +5,7 @@ const SCROLL_DOWN = "down";
 
 function useScrollDirection({
   initialDirection = SCROLL_UP,
-  thresholdPixels = SCROLL_DOWN
+  thresholdPixels = 70
 }) {
   const [scrollDir, setScrollDir] = useState(initialDirection);
 
