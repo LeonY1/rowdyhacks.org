@@ -5,7 +5,8 @@ const GoldPartnerImage = styled.img`
   max-width: 440px;
   margin: 10px;
   @media (max-width: 800px) {
-    height: 85px;
+    max-height: 115px;
+    max-width: 220px;
   }
 `;
 
@@ -14,6 +15,9 @@ const GoldPartnerContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  @media (max-width: 800px) {
+    margin-bottom: 15px;
+  }
 `;
 
 const SilverPartnerImage = styled.img`
@@ -21,7 +25,8 @@ const SilverPartnerImage = styled.img`
   max-width: 300px;
   margin: 10px;
   @media (max-width: 800px) {
-    height: 67.5px;
+    max-height: 80px;
+    max-width: 150px;
   }
 `;
 
@@ -32,6 +37,9 @@ const SilverPartnerContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  @media (max-width: 800px) {
+    margin-bottom: 15px;
+  }
 `;
 
 const BronzePartnerImage = styled.img`
@@ -39,7 +47,10 @@ const BronzePartnerImage = styled.img`
   min-width: 120px;
   margin: 10px;
   @media (max-width: 800px) {
-    height: 42.5px;
+    max-height: 80px;
+    max-width: 120px;
+    min-width: 0;
+    margin: 0px 15px;
   }
 `;
 
@@ -71,7 +82,7 @@ const OtherPartnerImage = styled.img`
   max-height: 200px;
   margin: 10px;
   @media (max-width: 800px) {
-    height: 67.5px;
+    max-height: 100px;
   }
 `;
 

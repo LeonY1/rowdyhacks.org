@@ -25,7 +25,7 @@ const MissionStatementWrapper = styled.div`
   width: 50vw;
   padding: 50px;
   @media (max-width: 800px) {
-    padding: 20px;
+    padding: 0px 20px;
     width: 90vw;
   }
 
@@ -41,6 +41,7 @@ const MissionTextWrapper = styled.div`
   @media (max-width: 800px) {
     width: 90vw;
     font-size: 14px;
+    margin-bottom: 20px;
   }
   font-weight: 400;
   line-height: 1.35;

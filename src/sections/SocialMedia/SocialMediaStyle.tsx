@@ -11,6 +11,10 @@ const SocialMediaTitleWrapper = styled.div`
   font-weight: 700;
   margin-bottom: 20px;
   color: #ffffff;
+  @media (max-width: 800px) {
+    font-size: 42px;
+    margin-bottom: 0px;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -20,6 +24,9 @@ const LogoContainer = styled.div`
 const CodeofConduct = styled.div`
   font-size: 18px;
   margin: 10px 0px;
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
 const Link = styled.a`
@@ -30,12 +37,20 @@ const SocialTextWrapper = styled.p`
   color: #ffffff;
   margin-bottom: 20px;
   font-size: 18px;
+  @media (max-width: 800px) {
+    font-size: 14px;
+    width: 90vw;
+  }
 `;
 
 const FooterContainer = styled.p`
   color: #ffffff;
   width: 40vw;
   font-size: 18px;
+  @media (max-width: 800px) {
+    width: 90vw;
+    font-size: 14px;
+  }
 `;
 
 const EmailLink = styled.a`
