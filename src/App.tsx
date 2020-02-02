@@ -5,6 +5,7 @@ import Hero from "./sections/Hero/Hero";
 
 const titleNames = [
   { title: "About", link: "#about" },
+  { title: "Mission", link: "#mission" },
   { title: "FAQ", link: "#faq" },
   { title: "Location", link: "#location" },
   { title: "Partners", link: "#partners" }

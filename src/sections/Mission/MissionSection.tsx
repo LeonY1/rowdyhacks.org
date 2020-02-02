@@ -22,7 +22,7 @@ function MissionSection() {
 
 const MissionContent: React.FC = () => {
   return (
-    <MissionContentWrapper>
+    <MissionContentWrapper id="mission">
       <MissionImageWrapper src={MissionImage} alt="MissionImage" />
       <MissionStatementWrapper>
         <MissionTitleWrapper>{MissionTitle}</MissionTitleWrapper>
