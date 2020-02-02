@@ -106,7 +106,7 @@ const BronzePartnerSection: React.FC = () => {
       {bronzePartners.map(partner => {
         const { name, link } = partner;
         return (
-          <a href={link}>
+          <a href={link} style={{ minWidth: "120px", margin: "0px 15px" }}>
             <div>
               <BronzePartnerImage
                 key={name + "Image"}
