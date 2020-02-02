@@ -21,19 +21,21 @@ function HeroTitle() {
     return (screenWidth * 20) / 1851;
   };
 
-  const fontSize = () => {
-    if (screenWidth < 900) return (100 * screenWidth) / 900;
-    else return 100;
+  const fontSize = (fontSize: number) => {
+    if (screenWidth < 900) return (fontSize * screenWidth) / 900;
+    else return fontSize;
   };
 
   return (
     <HeroTitleWrapper {...{ theme: { margin: middleScreenWidth() } }}>
       <TitleWrapper
-        {...{ theme: { letterSpacing: letterSpacing(), fontSize: fontSize() } }}
+        {...{
+          theme: { letterSpacing: letterSpacing(), fontSize: fontSize(100) }
+        }}
       >
         {"ROWDYHACKS"}
       </TitleWrapper>
-      <DateWrapper>{"March 28-29 2020 | UTSA MAIN"}</DateWrapper>
+      <DateWrapper>{"March 28-29 2020 | UTSA MAIN CAMPUS"}</DateWrapper>
       <ButtonWrapper>
         <TitleButton
           onClick={() => {
