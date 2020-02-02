@@ -9,6 +9,7 @@ import {
   MissionTextWrapper
 } from "./MissionStyle";
 import MissionImage from "../../static/MissionImage.png";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 function MissionSection() {
   return (
@@ -21,13 +22,19 @@ function MissionSection() {
 }
 
 const MissionContent: React.FC = () => {
+  const screenWidth = useWindowWidth();
   return (
     <MissionContentWrapper>
-      <MissionImageWrapper src={MissionImage} alt="MissionImage" />
+      {screenWidth >= 800 ? (
+        <MissionImageWrapper src={MissionImage} alt="MissionImage" />
+      ) : null}
       <MissionStatementWrapper>
         <MissionTitleWrapper>{MissionTitle}</MissionTitleWrapper>
         <MissionTextWrapper>{MissionText}</MissionTextWrapper>
       </MissionStatementWrapper>
+      {screenWidth < 800 ? (
+        <MissionImageWrapper src={MissionImage} alt="MissionImage" />
+      ) : null}
     </MissionContentWrapper>
   );
 };
