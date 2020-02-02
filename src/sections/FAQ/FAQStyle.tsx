@@ -13,7 +13,7 @@ const FAQTitleWrapper = styled.div`
 
 const FAQContentWrapper = styled.div`
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
   font-size: 18px;
@@ -31,7 +31,6 @@ const FAQQuestionWrapper = styled.div`
   font-weight: 700;
   display: flex;
   text-align: left;
-  margin: 0px 0px 10px 0px;
   @media (max-width: 760px) {
     width: 80vw;
   }
@@ -48,6 +47,7 @@ const FAQAnswerWrapper = styled.div<AnswerProps>`
   text-align: left;
   font-size: 16px;
   transition: all 0.5s ease-out;
+  margin: 10px 0px 0px 0px;
 `;
 
 const FAQContainer = styled.div`
@@ -55,6 +55,7 @@ const FAQContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: left;
+  width: 100%;
   margin-bottom: 30px;
 `;
 
