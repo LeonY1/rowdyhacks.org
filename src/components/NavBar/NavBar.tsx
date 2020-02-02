@@ -4,10 +4,8 @@ import MenuItem from "./MenuItem";
 import HomeButton from "./HomeButton";
 import { NavBarTheme, NavBarContainer, MenuList } from "./NavBarStyle";
 import { MenuLink } from "./Interfaces/MenuLink";
-import useScrollDirection from "../../hooks/useScrollDirection";
 
 function NavBar(props: { titles: Array<MenuLink> }) {
-  const scrollDir = useScrollDirection({});
   const [scrolledDown, setScrolledDown] = useState(false);
 
   const checkOffset = () => {
@@ -26,13 +24,9 @@ function NavBar(props: { titles: Array<MenuLink> }) {
   });
 
   return (
-    <NavBarTheme
-      hidden={scrolledDown && scrollDir === "down"}
-      scrolledDown={scrolledDown}
-    >
+    <NavBarTheme scrolledDown={scrolledDown}>
       <NavBarContainer>
         <HomeButton></HomeButton>
-
         <MenuList>
           {props.titles.map(function(menuLink: MenuLink) {
             return (

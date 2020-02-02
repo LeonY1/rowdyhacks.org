@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 interface NavBarProps {
   scrolledDown: boolean;
-  hidden: boolean;
 }
 
 const NavBarTheme = styled.nav<NavBarProps>`
@@ -11,10 +10,8 @@ const NavBarTheme = styled.nav<NavBarProps>`
   max-height: 70px;
   transition: all 200ms ease;
   z-index: 100;
-  background-color: ${({ scrolledDown, theme }) =>
+  background-color: ${({ scrolledDown }) =>
     scrolledDown ? "#034872" : "transparent"};
-  transform: ${({ hidden }) =>
-    hidden ? "translateY(-70px)" : "translateY(0)"};
 `;
 
 const NavBarMargin = styled.div`
