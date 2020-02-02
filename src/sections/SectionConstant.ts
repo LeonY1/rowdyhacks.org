@@ -58,7 +58,7 @@ const socialLogos: Array<SocialLogo> = [
     altName: "Linkedin"
   },
   {
-    link: "https://www.instagram.com/rowdyhack",
+    link: "https://www.instagram.com/rowdyhacks",
     src: "instagram",
     altName: "Instagram"
   }
