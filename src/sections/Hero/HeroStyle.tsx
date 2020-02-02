@@ -47,23 +47,46 @@ const HeroBg = styled.img`
   z-index: 10;
 `;
 
+const HeroContainer = styled.div`
+  overflow: hidden;
+  position: relative;
+  @media (max-width: 800px) {
+    margin-top: 70px;
+    background-color: ;
+  }
+`;
+
 const TitleWrapper = styled.div`
-  font-size: 100px;
-  letter-spacing: 20px;
+  font-size: ${props => props.theme.fontSize}px;
+  letter-spacing: ${props => props.theme.letterSpacing}px;
 `;
 
 const HeroTitleWrapper = styled.div`
   top: 65px;
-  left: 500px;
+  left: ${props => props.theme.margin}px;
   color: #cc64b1;
   position: absolute;
   z-index: 50;
+  @media (max-width: 800px) {
+    position: relative;
+  }
 `;
 
 const HeroTitleContainer = styled.div`
   position: relative;
   overflow: hidden;
   z-index: 50;
+`;
+
+const ButtonWrapper = styled.div`
+  padding-left: 70px;
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
 `;
 
 const TitleButton = styled.button`
@@ -77,6 +100,7 @@ const TitleButton = styled.button`
   font-family: Helvetica;
   font-weight: 400;
   color: #fff6c2;
+  width: 220px;
 `;
 
 const DateWrapper = styled.div`
@@ -89,9 +113,11 @@ export {
   StillAnimation,
   TurnedStillAnimation,
   HeroBg,
+  HeroContainer,
   TitleWrapper,
   TitleButton,
   HeroTitleContainer,
   HeroTitleWrapper,
-  DateWrapper
+  DateWrapper,
+  ButtonWrapper
 };
