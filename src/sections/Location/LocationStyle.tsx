@@ -16,8 +16,8 @@ const LocationContainer = styled.div`
 const LocationWrapper = styled.div`
   color: #4d4d4d;
   text-align: center;
-  width: 491px;
-  padding: 2.5vh 2.5vw 2.5vh 7.5vw;
+  width: 50vw;
+  padding: 2.5vh 2.5vw 2.5vh 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ const LocationTitleWrapper = styled.div`
   font-family: Helvetica;
   font-weight: 700;
   font-size: 50px;
-  text-align: left;
+  text-align: center;
   @media (max-width: 800px) {
     font-size: 36px;
     text-align: center;
@@ -44,6 +44,7 @@ const LocationTitleDivider = styled.div`
   height: 5px;
   background: #4d4d4d;
   margin: 30px 0px;
+  align-self: center;
   @media (max-width: 800px) {
     margin: 10px;
   }
@@ -51,12 +52,13 @@ const LocationTitleDivider = styled.div`
 
 const LocationTextWrapper = styled.div`
   font-size: 20px;
-  width: 350px;
+  width: 40vw;
+
   @media (max-width: 800px) {
     width: 80vw;
     font-size: 14px;
   }
-  text-align: left;
+  text-align: center;
 `;
 
 const LocationImageWrapper = styled.img`

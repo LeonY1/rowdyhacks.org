@@ -20,9 +20,9 @@ const MissionImageWrapper = styled.img`
 `;
 
 const MissionStatementWrapper = styled.div`
-  color: #4d4d4d;
+  color: #ffffff;
   text-align: center;
-  width: 40vw;
+  width: 50vw;
   padding: 50px;
   @media (max-width: 800px) {
     padding: 20px;
@@ -37,7 +37,7 @@ const MissionStatementWrapper = styled.div`
 
 const MissionTextWrapper = styled.div`
   font-size: 20px;
-  width: 20vw;
+  width: 40vw;
   @media (max-width: 800px) {
     width: 90vw;
     font-size: 14px;
