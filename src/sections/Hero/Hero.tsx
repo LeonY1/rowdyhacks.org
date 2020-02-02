@@ -35,7 +35,6 @@ function Hero() {
 
   const stillScreenConversion = (object: StillAnimationInput) => {
     const { top, dist, width } = object;
-    console.log(screenWidth);
     return {
       top: (top * (screenWidth - 15)) / 1836,
       dist: (dist * (screenWidth - 15)) / 1836,

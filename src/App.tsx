@@ -1,13 +1,6 @@
 import React, { Suspense } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import AboutSection from "./sections/About/AboutSection";
-import { BackgroundTheme } from "./AppStyle";
-import MissionSection from "./sections/Mission/MissionSection";
-import FAQSection from "./sections/FAQ/FAQSection";
-import LocationSection from "./sections/Location/LocationSection";
-import PartnerSection from "./sections/Partners/PartnerSection";
-import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
 import Hero from "./sections/Hero/Hero";
 
 const titleNames = [

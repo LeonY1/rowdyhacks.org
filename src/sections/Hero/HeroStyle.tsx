@@ -53,8 +53,10 @@ const TitleWrapper = styled.div`
 
 const HeroTitleWrapper = styled.div`
   top: 80px;
-  left: 500px;
+  left: 300px;
+  color: #cc64b1;
   position: absolute;
+  letter-spacing: 20px;
   z-index: 50;
 `;
 

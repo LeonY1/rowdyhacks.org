@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
-const NavBarTheme = styled.nav`
+interface NavBarProps {
+  scrolledDown: boolean;
+  hidden: boolean;
+}
+
+const NavBarTheme = styled.nav<NavBarProps>`
   position: fixed;
   width: 100vw;
-  opacity: 100%
   max-height: 70px;
-  
-  z-index: 10000;
+  transition: all 200ms ease;
+  z-index: 100;
+  background-color: ${({ scrolledDown, theme }) =>
+    scrolledDown ? "#034872" : "transparent"};
+  transform: ${({ hidden }) =>
+    hidden ? "translateY(-70px)" : "translateY(0)"};
 `;
 
 const NavBarMargin = styled.div`
@@ -16,7 +24,7 @@ const NavBarMargin = styled.div`
 `;
 
 const NavTextContainer = styled.span`
-  color: #034872;
+  color: ${props => props.theme};
 `;
 
 const Home = styled.a`

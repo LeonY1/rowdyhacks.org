@@ -9,7 +9,7 @@ const DividerHeader = styled.div`
 
 const DividerFooter = styled.img`
   width: 100%;
-  z-index: 9999;
+  z-index: 10;
 `;
 
 const DividerMargin = styled.div`

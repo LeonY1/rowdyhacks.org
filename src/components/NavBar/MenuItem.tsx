@@ -1,13 +1,19 @@
 import React from "react";
 import { MenuItemContainer, NavTextContainer } from "./NavBarStyle";
 
-function MenuItem(props: { title: string; link: string }) {
-  const { title, link } = props;
+function MenuItem(props: {
+  title: string;
+  link: string;
+  scrolledDown: boolean;
+}) {
+  const { title, link, scrolledDown } = props;
 
   return (
     <a href={link}>
       <MenuItemContainer>
-        <NavTextContainer>{title}</NavTextContainer>
+        <NavTextContainer theme={scrolledDown ? "#ffffff" : "#034872"}>
+          {title}
+        </NavTextContainer>
       </MenuItemContainer>
     </a>
   );
