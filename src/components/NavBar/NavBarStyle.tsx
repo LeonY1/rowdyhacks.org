@@ -40,6 +40,9 @@ const NavBarContainer = styled.div`
   justify-content: space-between;
   padding: 0px 70px;
   margin: 10px 0px;
+  @media (max-width: 800px) {
+    padding: 0px 10px 0px 20px;
+  }
 `;
 
 const MenuList = styled.ul`

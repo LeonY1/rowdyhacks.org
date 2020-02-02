@@ -51,7 +51,6 @@ const HeroContainer = styled.div`
   overflow: hidden;
   position: relative;
   @media (max-width: 800px) {
-    margin-top: 70px;
     background-color: ;
   }
 `;
@@ -69,6 +68,9 @@ const HeroTitleWrapper = styled.div`
   z-index: 50;
   @media (max-width: 800px) {
     position: relative;
+    padding-top: 65px;
+    top: 0px;
+    background-color: #cbebe8;
   }
 `;
 
