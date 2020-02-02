@@ -13,12 +13,12 @@ const DividerFooter = styled.img`
 `;
 
 const DividerMargin = styled.div`
-  height: 5%;
+  display: flex;
+  margin-top: ${props => props.theme.margin}px;
 `;
 
 const DividerContent = styled.div`
   display: flex;
-  margin-top: ${props => props.theme.margin}px;
   padding-top: calc(${props => props.theme.margin}px * -1);
   background: ${props => props.theme.main};
   z-index: ${props => props.theme.zindex};

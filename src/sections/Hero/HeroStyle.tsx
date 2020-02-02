@@ -49,14 +49,14 @@ const HeroBg = styled.img`
 
 const TitleWrapper = styled.div`
   font-size: 100px;
+  letter-spacing: 20px;
 `;
 
 const HeroTitleWrapper = styled.div`
-  top: 80px;
-  left: 300px;
+  top: 65px;
+  left: 500px;
   color: #cc64b1;
   position: absolute;
-  letter-spacing: 20px;
   z-index: 50;
 `;
 
@@ -66,6 +66,23 @@ const HeroTitleContainer = styled.div`
   z-index: 50;
 `;
 
+const TitleButton = styled.button`
+  margin: 10px 15px;
+  background: #cc64b1;
+  border-width: 0;
+  border-radius: 30px;
+  height: 48px;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: 400;
+  color: #fff6c2;
+`;
+
+const DateWrapper = styled.div`
+  font-size: 20px;
+`;
+
 export {
   RightAnimation,
   LeftAnimation,
@@ -73,6 +90,8 @@ export {
   TurnedStillAnimation,
   HeroBg,
   TitleWrapper,
+  TitleButton,
   HeroTitleContainer,
-  HeroTitleWrapper
+  HeroTitleWrapper,
+  DateWrapper
 };

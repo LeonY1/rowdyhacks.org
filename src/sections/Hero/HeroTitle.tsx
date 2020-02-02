@@ -1,18 +1,35 @@
 import React from "react";
 import {
-  HeroTitleContainer,
   TitleWrapper,
-  HeroTitleWrapper
+  HeroTitleWrapper,
+  TitleButton,
+  DateWrapper
 } from "./HeroStyle";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 function HeroTitle() {
+  const screenWidth = useWindowWidth();
   return (
     <HeroTitleWrapper>
-      <TitleWrapper>{"R   o   w   d   y   H   a   c   k   s"}</TitleWrapper>
-      <button>Apply to be a volunteer/mentor</button>
-      <button>Apply to be a hacker</button>
+      <TitleWrapper>{"ROWDYHACKS"}</TitleWrapper>
+      <DateWrapper>{"March 28-29 2020 | UTSA MAIN"}</DateWrapper>
+      <div style={{ paddingLeft: "50px" }}>
+        <TitleButton
+          onClick={() => {
+            window.location.href = "https://rowdyhacks.typeform.com/to/ImTIU6";
+          }}
+        >
+          Apply to be a volunteer/mentor!
+        </TitleButton>
+        <TitleButton
+          onClick={() => {
+            window.location.href = "https://apply.rowdyhacks.io";
+          }}
+        >
+          Apply to be a hacker!
+        </TitleButton>
+      </div>
     </HeroTitleWrapper>
   );
 }
-
 export default HeroTitle;

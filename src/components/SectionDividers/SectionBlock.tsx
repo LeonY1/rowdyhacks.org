@@ -64,6 +64,7 @@ function SectionBlock(props: sectionProps) {
 
   return (
     <Divider>
+      <DividerMargin {...sectionTheme} />
       <DividerContent {...sectionTheme}>
         {content({ children: null })}
       </DividerContent>
