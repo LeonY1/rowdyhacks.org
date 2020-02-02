@@ -11,6 +11,8 @@ import {
   CodeofConduct
 } from "./SocialMediaStyle";
 import { SocialMediaText, FooterText, socialLogos } from "../SectionConstant";
+import FooterBanner from "../../static/footer-green.png";
+import styled from "styled-components";
 
 function SocialMediaSection() {
   return (
@@ -22,9 +24,15 @@ function SocialMediaSection() {
   );
 }
 
+const FooterBannerImage = styled.img`
+  width: 100%;
+  background-color: #ffffff;
+`;
+
 const SocialMediaContent: React.FC = () => {
   return (
     <SocialMediaWrapper>
+      <FooterBannerImage src={FooterBanner} />
       <SocialMediaTitleWrapper>SOCIAL MEDIA</SocialMediaTitleWrapper>
       <SocialTextWrapper>{SocialMediaText}</SocialTextWrapper>
       <LogoContainer>

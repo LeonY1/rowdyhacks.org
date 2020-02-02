@@ -9,17 +9,17 @@ const SocialMediaWrapper = styled.div`
 const SocialMediaTitleWrapper = styled.div`
   font-size: 55px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #ffffff;
 `;
 
 const LogoContainer = styled.div`
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 `;
 
 const CodeofConduct = styled.div`
   font-size: 18px;
-  margin: 40px 0px;
+  margin: 10px 0px;
 `;
 
 const Link = styled.a`
@@ -28,7 +28,7 @@ const Link = styled.a`
 
 const SocialTextWrapper = styled.p`
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 18px;
 `;
 

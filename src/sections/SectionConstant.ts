@@ -22,7 +22,7 @@ const FAQQuestions: Array<string> = [
   "What if this FAQ didn't answer my question?"
 ];
 
-const FAQAnswers: Array<string> = [
+const FAQAnswers: Array<any> = [
   "RowdyHacks is absolutely FREE thanks to our awesome partners. You don't have to worry about a thing -- we'll provide the food, t-shirts, snacks, and prizes.",
   "No worries! RowdyHacks is for everyone from all coding and non-coding backgrounds! We will have plenty of mentors and peers to help you learn throughout the event.",
   "Teams can consist up to 4 students! We encourage hackers to participate as part of a team. Don't have a team? No worries, we will have an opportunity before the event for you to meet other hackers and form teams!",

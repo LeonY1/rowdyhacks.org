@@ -4,11 +4,13 @@ import {
   GoldPartnerImage,
   SilverPartnerImage,
   BronzePartnerImage,
+  OtherPartnerImage,
   PartnerContentWrapper,
   PartnerTitleWrapper,
   GoldPartnerContainer,
   SilverPartnerContainer,
-  BronzePartnerContainer
+  BronzePartnerContainer,
+  OtherPartnerContainer
 } from "./PartnerStyle";
 
 function PartnerSection() {
@@ -22,67 +24,121 @@ function PartnerSection() {
 }
 
 const goldPartners = [
-  "FrostBank",
-  "ManTech",
-  "TechData",
-  "AFCS",
-  "iHeartMedia"
+  { name: "FrostBank", link: "https://www.frostbank.com/" },
+  { name: "ManTech", link: "https://www.mantech.com/" },
+  { name: "TechData", link: "https://www.techdata.com/" },
+  { name: "AFCS", link: "http://www.afciviliancareers.com/" },
+  { name: "iHeartMedia", link: "https://www.iheartmedia.com/" }
 ];
 
-const silverPartners = ["UTSA_CS", "Accenture"];
+const silverPartners = [
+  { name: "UTSA_CS", link: "https://cs.utsa.edu/" },
+  { name: "Accenture", link: "https://www.accenture.com/us-en" }
+];
 
 const bronzePartners = [
-  "CivTechSA",
-  "Facebook",
-  "Google",
-  "UTSA_COS",
-  "Valero"
+  { name: "CivTechSA", link: "https://www.civtech-sa.com/" },
+  { name: "Facebook", link: "https://www.facebook.com/" },
+  { name: "Google", link: "https://careers.google.com/students/" },
+  { name: "UTSA_COS", link: "https://www.utsa.edu/sciences/" },
+  { name: "Valero", link: "https://www.valero.com/en-us" }
 ];
+
+const otherPartners = [{ name: "MLH", link: "https://mlh.io/" }];
 
 const PartnerContent: React.FC = () => {
   return (
     <PartnerContentWrapper>
       <PartnerTitleWrapper>Our Partners</PartnerTitleWrapper>
-      <GoldPartnerContainer>
-        {goldPartners.map(value => {
-          return (
+      <GoldPartnerSection />
+      <SilverPartnerSection />
+      <BronzePartnerSection />
+      <OtherPartnerSection />
+    </PartnerContentWrapper>
+  );
+};
+
+const GoldPartnerSection: React.FC = () => {
+  return (
+    <GoldPartnerContainer>
+      {goldPartners.map(partner => {
+        const { name, link } = partner;
+        return (
+          <a href={link}>
             <div>
               <GoldPartnerImage
-                key={value + "Image"}
-                src={require("../../static/PartnerLogos/" + value + ".png")}
-                alt={value}
+                key={name + "Image"}
+                src={require("../../static/PartnerLogos/" + name + ".png")}
+                alt={name}
               />
             </div>
-          );
-        })}
-      </GoldPartnerContainer>
-      <SilverPartnerContainer>
-        {silverPartners.map(value => {
-          return (
+          </a>
+        );
+      })}
+    </GoldPartnerContainer>
+  );
+};
+
+const SilverPartnerSection: React.FC = () => {
+  return (
+    <SilverPartnerContainer>
+      {silverPartners.map(partner => {
+        const { name, link } = partner;
+        return (
+          <a href={link}>
             <div>
               <SilverPartnerImage
-                key={value + "Image"}
-                src={require("../../static/PartnerLogos/" + value + ".png")}
-                alt={value}
+                key={name + "Image"}
+                src={require("../../static/PartnerLogos/" + name + ".png")}
+                alt={name}
               />
             </div>
-          );
-        })}
-      </SilverPartnerContainer>
-      <BronzePartnerContainer>
-        {bronzePartners.map(value => {
-          return (
+          </a>
+        );
+      })}
+    </SilverPartnerContainer>
+  );
+};
+
+const BronzePartnerSection: React.FC = () => {
+  return (
+    <BronzePartnerContainer>
+      {bronzePartners.map(partner => {
+        const { name, link } = partner;
+        return (
+          <a href={link}>
             <div>
               <BronzePartnerImage
-                key={value + "Image"}
-                src={require("../../static/PartnerLogos/" + value + ".png")}
-                alt={value}
+                key={name + "Image"}
+                src={require("../../static/PartnerLogos/" + name + ".png")}
+                alt={name}
               />
             </div>
-          );
-        })}
-      </BronzePartnerContainer>
-    </PartnerContentWrapper>
+          </a>
+        );
+      })}
+    </BronzePartnerContainer>
+  );
+};
+
+const OtherPartnerSection: React.FC = () => {
+  return (
+    <OtherPartnerContainer>
+      {otherPartners.map(partner => {
+        const { name, link } = partner;
+        return (
+          <a href={link}>
+            <div>
+              <OtherPartnerImage
+                key={name + "Image"}
+                src={require("../../static/PartnerLogos/" + name + ".jpg")}
+                alt={name}
+              />
+            </div>
+          </a>
+        );
+      })}
+    </OtherPartnerContainer>
   );
 };
 
