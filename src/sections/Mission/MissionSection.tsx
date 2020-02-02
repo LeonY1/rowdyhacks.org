@@ -12,7 +12,7 @@ import MissionImage from "../../static/MissionImage.png";
 
 function MissionSection() {
   return (
-    <SectionBlock sectionNumber={1}>
+    <SectionBlock sectionNumber={1} id="mission">
       {{
         content: MissionContent
       }}
@@ -22,7 +22,7 @@ function MissionSection() {
 
 const MissionContent: React.FC = () => {
   return (
-    <MissionContentWrapper id="mission">
+    <MissionContentWrapper>
       <MissionImageWrapper src={MissionImage} alt="MissionImage" />
       <MissionStatementWrapper>
         <MissionTitleWrapper>{MissionTitle}</MissionTitleWrapper>

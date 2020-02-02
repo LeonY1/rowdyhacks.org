@@ -13,7 +13,7 @@ import LocationImage from "../../static/MainCampusMapsV2.png";
 
 function LocationSection() {
   return (
-    <SectionBlock sectionNumber={3}>
+    <SectionBlock sectionNumber={3} id="location">
       {{
         content: LocationContent
       }}
@@ -23,7 +23,7 @@ function LocationSection() {
 
 const LocationContent: React.FC = () => {
   return (
-    <LocationContainer id="location">
+    <LocationContainer>
       <LocationWrapper>
         <LocationTitleWrapper>LOCATION</LocationTitleWrapper>
         <LocationTitleDivider />

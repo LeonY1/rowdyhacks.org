@@ -5,7 +5,7 @@ const FAQTitleWrapper = styled.div`
   font-weight: 700;
   color: #ffffff;
   font-size: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   @media (max-width: 760px) {
     font-size: 36px;
   }
@@ -14,45 +14,48 @@ const FAQTitleWrapper = styled.div`
 const FAQContentWrapper = styled.div`
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
   justify-content: space-evenly;
-  width: 760px;
+  width: 100%;
   font-size: 18px;
   font-family: Helvetica;
-  @media (max-width: 760px) {
-    width: 90vw;
+  @media (max-width: 800px) {
+    width: 100vw;
     font-size: 14px;
     align-items: left;
+    flex-direction: column;
   }
 `;
 
 const FAQQuestionWrapper = styled.div`
-  color: #fcf89c;
+  color: #cc64b1;
+  font-weight: 700;
   display: flex;
   text-align: left;
+  margin: 0px 0px 10px 0px;
   @media (max-width: 760px) {
     width: 80vw;
   }
 `;
 
-const FAQAnswerWrapper = styled.div`
-  color: #ffffff;
+interface AnswerProps {
+  opened: boolean;
+}
+
+const FAQAnswerWrapper = styled.div<AnswerProps>`
+  max-height: ${props => (props.opened ? "200" : "0")}px;
+  display: ${props => (props.opened ? "flex" : "none")};
+  color: black;
   text-align: left;
-  margin-bottom: 20px;
-  display: flex;
+  font-size: 16px;
+  transition: all 0.5s ease-out;
 `;
 
-const FAQQuestionMargin = styled.div`
-  height: 20px;
-  @media (max-width: 760px) {
-    height: 10px;
-  }
-`;
 const FAQContainer = styled.div`
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: left;
+  margin-bottom: 30px;
 `;
 
 export {
@@ -60,6 +63,5 @@ export {
   FAQContentWrapper,
   FAQQuestionWrapper,
   FAQAnswerWrapper,
-  FAQQuestionMargin,
   FAQContainer
 };

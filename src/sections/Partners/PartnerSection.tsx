@@ -13,7 +13,7 @@ import {
 
 function PartnerSection() {
   return (
-    <SectionBlock sectionNumber={4}>
+    <SectionBlock sectionNumber={4} id="partners">
       {{
         content: PartnerContent
       }}
@@ -41,7 +41,7 @@ const bronzePartners = [
 
 const PartnerContent: React.FC = () => {
   return (
-    <PartnerContentWrapper id="partners">
+    <PartnerContentWrapper>
       <PartnerTitleWrapper>Our Partners</PartnerTitleWrapper>
       <GoldPartnerContainer>
         {goldPartners.map(value => {

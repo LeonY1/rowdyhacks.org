@@ -10,13 +10,14 @@ import useWindowWidth from "../../hooks/useWindowWidth";
 
 interface sectionProps {
   sectionNumber: number;
+  id: string;
   children: {
     content: React.FC;
   };
 }
 
 function SectionBlock(props: sectionProps) {
-  const { sectionNumber } = props;
+  const { sectionNumber, id } = props;
   const { content } = props.children;
   const screenWidth = useWindowWidth();
   const sectionColors = [
@@ -63,7 +64,7 @@ function SectionBlock(props: sectionProps) {
   const sectionTheme = sectionColors[sectionNumber];
 
   return (
-    <Divider>
+    <Divider id={id}>
       <DividerMargin {...sectionTheme} />
       <DividerContent {...sectionTheme}>
         {content({ children: null })}

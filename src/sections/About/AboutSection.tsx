@@ -18,7 +18,7 @@ import useWindowWidth from "../../hooks/useWindowWidth";
 
 const AboutSection: React.FC = () => {
   return (
-    <SectionBlock sectionNumber={0}>
+    <SectionBlock sectionNumber={0} id="about">
       {{
         content: AboutContent
       }}
@@ -29,7 +29,7 @@ const AboutSection: React.FC = () => {
 const AboutContent: React.FC = () => {
   const windowWidth = useWindowWidth();
   return (
-    <AboutContainer id="about">
+    <AboutContainer>
       <AboutTitleWrapper>ABOUT</AboutTitleWrapper>
       <AboutContentWrapper>
         <AboutContentTab content={AboutTextBlock1} name={"Handshake"} />

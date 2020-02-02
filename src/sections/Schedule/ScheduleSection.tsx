@@ -3,7 +3,7 @@ import SectionBlock from "../../components/SectionDividers/SectionBlock";
 
 function ScheduleSection() {
   return (
-    <SectionBlock sectionNumber={4}>
+    <SectionBlock sectionNumber={4} id="schedule">
       {{
         content: () => {
           return (

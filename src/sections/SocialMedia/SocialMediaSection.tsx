@@ -14,7 +14,7 @@ import { SocialMediaText, FooterText, socialLogos } from "../SectionConstant";
 
 function SocialMediaSection() {
   return (
-    <SectionBlock sectionNumber={5}>
+    <SectionBlock sectionNumber={5} id="social">
       {{
         content: SocialMediaContent
       }}

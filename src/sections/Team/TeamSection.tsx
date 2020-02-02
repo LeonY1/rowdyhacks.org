@@ -3,7 +3,7 @@ import SectionBlock from "../../components/SectionDividers/SectionBlock";
 
 function TeamSection() {
   return (
-    <SectionBlock sectionNumber={6}>
+    <SectionBlock sectionNumber={6} id="team">
       {{
         content: () => {
           return <div></div>;
