@@ -3,7 +3,12 @@ import React from "react";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import useTimer from "../../hooks/useTimer";
 import { animationObjects, stillObjects } from "./HeroConstants";
-import { HeroBg, StillAnimation, TurnedStillAnimation } from "./HeroStyle";
+import {
+  HeroBg,
+  HeroContainer,
+  StillAnimation,
+  TurnedStillAnimation
+} from "./HeroStyle";
 import Animation from "./Animation";
 import AnimationInput from "./Interfaces/AnimationInput";
 import StillAnimationInput from "./Interfaces/StillAnimationInput";
@@ -62,7 +67,7 @@ function Hero() {
   return (
     <>
       <HeroTitle />
-      <div style={{ overflow: "hidden", position: "relative" }}>
+      <HeroContainer>
         {animationObjects.map((object, index) => {
           return <Animation {...object} {...objectLocations[index]} />;
         })}
@@ -86,7 +91,7 @@ function Hero() {
             );
         })}
         <HeroBg src={heroImage} alt="HeroImage" />
-      </div>
+      </HeroContainer>
     </>
   );
 }
