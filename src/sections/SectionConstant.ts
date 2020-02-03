@@ -9,8 +9,12 @@ const AboutTextBlock3: string =
 
 const MissionTitle: string = "TRACKS";
 
-const MissionText: string =
-  "There will be three tracks that you can participate in at RowdyHacks. These tracks are General, Learner, and Cyber.";
+const MissionText: Array<string> = [
+  "We have three different tracks at RowdyHacks 2020 you can tailor your project towards.",
+  "For our hackers who create projects that mainly focus on the of the topics of Cybersecurity.",
+  "First time coders with no technical experience have the opportunity to learn coding basics and be able to compete against other first time hackers for prizes. This track is specifically for people who have never coded before!",
+  "If you already have an idea in mind and it doesn't fall under our Cyber or Learners Tracks, our General Track is for you!"
+];
 
 const FAQQuestions: Array<string> = [
   "How much does it cost to participate?",
@@ -29,7 +33,7 @@ const FAQAnswers: Array<any> = [
   "Anything! You can make a new social media website, a simple weather app, a sentimental analysis tool for tweets...anything in your wildest imagination, you can create. Your team can come prepared with an idea or come up with one on the spot.",
   "No problem! RowdyHacks is open to ANY college/university student over 18 years old. We're so excited to see students from all over collaborating and innovating together at this year's event.",
   "Any hardware you plan on using for the project -- your laptop, charger, portable mouse, phone, Raspberry Pi, VR headset, robots, etc. You might also want to bring a change of clothes and toiletries.",
-  "Please e-mail team@rowdyhacks.org. We will get back to you and give you the best support."
+  ". We will get back to you and give you the best support."
 ];
 
 const LocationText: string =

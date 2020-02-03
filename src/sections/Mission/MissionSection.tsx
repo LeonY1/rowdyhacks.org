@@ -30,7 +30,17 @@ const MissionContent: React.FC = () => {
       ) : null}
       <MissionStatementWrapper>
         <MissionTitleWrapper>{MissionTitle}</MissionTitleWrapper>
-        <MissionTextWrapper>{MissionText}</MissionTextWrapper>
+        {MissionText.map((text, index) => {
+          return (
+            <MissionTextWrapper key={"tracks" + index}>
+              {index === 1 && <b>Cybersecurity Track: </b>}
+              {index === 2 && <b>Learners Track: </b>}
+              {index === 3 && <b>General Track: </b>}
+
+              {text}
+            </MissionTextWrapper>
+          );
+        })}
       </MissionStatementWrapper>
       {screenWidth < 800 ? (
         <MissionImageWrapper src={MissionImage} alt="MissionImage" />

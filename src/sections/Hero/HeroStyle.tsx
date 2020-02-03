@@ -101,7 +101,7 @@ const TitleButton = styled.button`
   font-size: 14px;
   font-weight: 400;
   color: #fff6c2;
-  width: 220px;
+  max-width: 300px;
 `;
 
 const DateWrapper = styled.div`

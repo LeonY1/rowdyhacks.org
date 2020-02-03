@@ -37,13 +37,15 @@ const MissionStatementWrapper = styled.div`
 const MissionTextWrapper = styled.div`
   font-size: 20px;
   width: 40vw;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+  margin-bottom: 20px;
   @media (max-width: 800px) {
     width: 90vw;
     font-size: 14px;
     margin-bottom: 20px;
   }
-  font-weight: 400;
-  line-height: 1.35;
 `;
 
 const MissionTitleWrapper = styled.div`

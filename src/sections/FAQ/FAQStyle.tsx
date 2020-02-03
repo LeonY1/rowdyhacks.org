@@ -54,7 +54,10 @@ const FAQContainer = styled.div`
   justify-content: center;
   align-items: left;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  @media (max-width: 800px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export {

@@ -80,7 +80,21 @@ const FAQContent: React.FC = () => {
                   >
                     <FAQQuestionWrapper>{value}</FAQQuestionWrapper>
                     <FAQAnswerWrapper opened={openedId === index}>
-                      {FAQAnswers[index]}
+                      {index === FAQQuestions.length - 1 ? (
+                        <>
+                          <span>
+                            <span style={{ marginRight: "5px" }}>
+                              Please email
+                            </span>
+                            <a href="mailto:team@rowdyhacks.org">
+                              team@rowdyhacks.org
+                            </a>
+                            {FAQAnswers[index]}
+                          </span>
+                        </>
+                      ) : (
+                        <span>{FAQAnswers[index]}</span>
+                      )}
                     </FAQAnswerWrapper>
                   </FaqCard>
                 ) : null}
