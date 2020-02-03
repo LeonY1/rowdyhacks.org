@@ -20,9 +20,9 @@ function NavBar(props: { titles: Array<MenuLink> }) {
   const toggleOpen = () => {
     setOpen(!open);
     if (open) {
-      $("#mlh-trust-badge").css("display", "none");
+      document.getElementById("mlh-trust-badge").style.visibility = "visible";
     } else {
-      $("#mlh-trust-badge").css("display", "block");
+      document.getElementById("mlh-trust-badge").style.visibility = "hidden";
     }
   };
 

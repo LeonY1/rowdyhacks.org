@@ -16,7 +16,6 @@ const MissionImageWrapper = styled.img`
   @media (max-width: 800px) {
     width: 90vw;
   }
-  height: auto;
 `;
 
 const MissionStatementWrapper = styled.div`

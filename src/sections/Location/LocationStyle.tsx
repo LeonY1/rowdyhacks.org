@@ -61,18 +61,10 @@ const LocationTextWrapper = styled.div`
   text-align: center;
 `;
 
-const LocationImageWrapper = styled.img`
-  width: 50vw;
-  @media (max-width: 800px) {
-    width: 90vw;
-  }
-`;
-
 export {
   LocationTitleWrapper,
   LocationTitleDivider,
   LocationTextWrapper,
-  LocationImageWrapper,
   LocationContainer,
   LocationWrapper
 };

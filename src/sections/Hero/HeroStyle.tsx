@@ -61,14 +61,14 @@ const TitleWrapper = styled.div`
 `;
 
 const HeroTitleWrapper = styled.div`
-  top: 65px;
+  top: 55px;
   left: ${props => props.theme.margin}px;
   color: #cc64b1;
   position: absolute;
   z-index: 50;
   @media (max-width: 800px) {
     position: relative;
-    padding-top: 100px;
+    padding-top: 120px;
     top: 0px;
     background-color: #cbebe8;
   }
@@ -81,7 +81,7 @@ const HeroTitleContainer = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-  padding-left: 70px;
+  padding-left: 140px;
   @media (max-width: 800px) {
     display: flex;
     flex-direction: column;

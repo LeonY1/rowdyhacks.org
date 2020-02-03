@@ -22,7 +22,7 @@ function HeroTitle() {
   };
 
   const fontSize = (fontSize: number) => {
-    if (screenWidth < 900) return (fontSize * screenWidth) / 900;
+    if (screenWidth < 1100) return (fontSize * screenWidth) / 1100;
     else return fontSize;
   };
 

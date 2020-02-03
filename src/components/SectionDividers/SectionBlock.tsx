@@ -57,8 +57,8 @@ function SectionBlock(props: sectionProps) {
         zindex: 1
       }
     },
-    { theme: { main: "#ffffff", src: null } },
-    { theme: { main: "#5faa86", src: null } }
+    { theme: { main: "#ffffff" } },
+    { theme: { main: "#5faa86" } }
   ];
 
   const sectionTheme = sectionColors[sectionNumber];
@@ -70,7 +70,7 @@ function SectionBlock(props: sectionProps) {
         {content({ children: null })}
       </DividerContent>
       {(() => {
-        if (sectionTheme.theme.src === null) return <DividerMargin />;
+        if (sectionTheme.theme.src === undefined) return <DividerMargin />;
         return (
           <DividerFooter
             src={require("../../static/" + sectionTheme.theme.src + ".png")}

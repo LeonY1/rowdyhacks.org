@@ -41,7 +41,7 @@ const LogoImage = styled.img`
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0px 70px;
+  padding: 0px 50px;
   margin: 10px 0px;
   @media (max-width: 800px) {
     padding: 0px 10px 0px 20px;
@@ -52,7 +52,7 @@ const MenuList = styled.ul`
   display: flex;
   list-style-type: none;
   overflow: hidden;
-  padding-right: 100px;
+  padding-right: 150px;
 `;
 
 const MenuItemContainer = styled.a`
