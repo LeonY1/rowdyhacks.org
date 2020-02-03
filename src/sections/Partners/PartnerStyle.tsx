@@ -70,7 +70,6 @@ const PartnerContentWrapper = styled.div`
 `;
 
 const PartnerTitleWrapper = styled.div`
-  font-family: Helvetica;
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 30px;

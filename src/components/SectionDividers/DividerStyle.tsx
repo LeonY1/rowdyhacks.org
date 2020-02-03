@@ -37,7 +37,6 @@ const SectionTitle = styled.div`
 `;
 
 const SectionContent = styled.div`
-  font-family: Helvetica;
   font-style: normal;
   font-weight: 400;
 `;

@@ -44,7 +44,7 @@ const SocialMediaContent: React.FC = () => {
               key={logo.altName + "Social"}
             >
               <img
-                src={require("../../static/SocialMedia/" + logo.src + ".webp")}
+                src={require("../../static/SocialMedia/" + logo.src + ".png")}
                 alt={logo.altName}
               />
             </Link>

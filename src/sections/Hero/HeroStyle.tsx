@@ -99,7 +99,6 @@ const TitleButton = styled.button`
   height: 48px;
   padding: 10px 10px;
   font-size: 14px;
-  font-family: Helvetica;
   font-weight: 400;
   color: #fff6c2;
   width: 220px;

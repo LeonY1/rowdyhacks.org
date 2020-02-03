@@ -29,7 +29,6 @@ const LocationWrapper = styled.div`
 `;
 
 const LocationTitleWrapper = styled.div`
-  font-family: Helvetica;
   font-weight: 700;
   font-size: 50px;
   text-align: center;

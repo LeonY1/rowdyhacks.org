@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const AboutTitleWrapper = styled.div`
-  font-family: Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 48px;
@@ -13,7 +12,6 @@ const AboutTitleWrapper = styled.div`
 `;
 
 const AboutContentWrapper = styled.div`
-  font-family: Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 21px;

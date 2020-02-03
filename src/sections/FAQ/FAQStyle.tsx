@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const FAQTitleWrapper = styled.div`
-  font-family: Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 48px;
@@ -17,7 +16,6 @@ const FAQContentWrapper = styled.div`
   justify-content: space-evenly;
   width: 100%;
   font-size: 18px;
-  font-family: Helvetica;
   @media (max-width: 800px) {
     width: 100vw;
     font-size: 14px;
