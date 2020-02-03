@@ -33,6 +33,9 @@ const Home = styled.a`
 const LogoImage = styled.img`
   max-width: 50px;
   max-height: 50px;
+  @media (max-width: 800px) {
+    margin-top: 5px;
+  }
 `;
 
 const NavBarContainer = styled.div`
@@ -46,15 +49,26 @@ const NavBarContainer = styled.div`
 `;
 
 const MenuList = styled.ul`
+  display: flex;
   list-style-type: none;
   overflow: hidden;
+  padding-right: 100px;
 `;
 
 const MenuItemContainer = styled.a`
   float: left;
   padding: 0px 10px;
-
   transition: opacity 250ms ease-in-out 0s;
+  @media (max-width: 800px) {
+    margin: 50px 0px;
+  }
+`;
+
+const UnstyledButton = styled.button`
+  background-color: transparent;
+  border: 0px;
+  font-size: 18px;
+  display: flex;
 `;
 
 export {
@@ -65,5 +79,6 @@ export {
   NavBarContainer,
   NavBarMargin,
   MenuList,
-  MenuItemContainer
+  MenuItemContainer,
+  UnstyledButton
 };

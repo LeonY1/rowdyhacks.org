@@ -46,7 +46,7 @@ function HeroTitle() {
         </TitleButton>
         <TitleButton
           onClick={() => {
-            window.location.href = "https://apply.rowdyhacks.io";
+            window.location.href = "https://apply.rowdyhacks.io/register.html";
           }}
         >
           Apply to be a hacker!

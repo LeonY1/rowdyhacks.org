@@ -74,6 +74,9 @@ const PartnerTitleWrapper = styled.div`
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 30px;
+  @media (max-width: 800px) {
+    font-size: 42px;
+  }
 `;
 
 const OtherPartnerContainer = styled.div``;

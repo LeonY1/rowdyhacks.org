@@ -49,7 +49,7 @@ const otherPartners = [{ name: "MLH", link: "https://mlh.io/" }];
 const PartnerContent: React.FC = () => {
   return (
     <PartnerContentWrapper>
-      <PartnerTitleWrapper>Our Partners</PartnerTitleWrapper>
+      <PartnerTitleWrapper>OUR PARTNERS</PartnerTitleWrapper>
       <GoldPartnerSection />
       <SilverPartnerSection />
       <BronzePartnerSection />

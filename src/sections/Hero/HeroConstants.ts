@@ -6,7 +6,7 @@ const animationObjects: Array<AnimationInput> = [
     direction: "right",
     startTime: 1000,
     endTime: 27000,
-    top: 540,
+    top: 520,
     margin: -250,
     width: 210
   },
@@ -34,7 +34,7 @@ const animationObjects: Array<AnimationInput> = [
     direction: "left",
     startTime: 14000,
     endTime: 27000,
-    top: 610,
+    top: 580,
     margin: -250,
     width: 250
   },
@@ -43,7 +43,7 @@ const animationObjects: Array<AnimationInput> = [
     direction: "left",
     startTime: 1000,
     endTime: 13000,
-    top: 610,
+    top: 580,
     margin: -250,
     width: 250
   },
@@ -52,7 +52,7 @@ const animationObjects: Array<AnimationInput> = [
     direction: "right",
     startTime: 18000,
     endTime: 34000,
-    top: 700,
+    top: 660,
     margin: -100,
     width: 55
   },
@@ -61,7 +61,7 @@ const animationObjects: Array<AnimationInput> = [
     direction: "right",
     startTime: 13000,
     endTime: 33000,
-    top: 680,
+    top: 640,
     margin: -100,
     width: 55
   },
@@ -70,7 +70,7 @@ const animationObjects: Array<AnimationInput> = [
     direction: "right",
     startTime: 5000,
     endTime: 25000,
-    top: 700,
+    top: 660,
     margin: -100,
     width: 55
   }
@@ -91,7 +91,7 @@ const stillObjects = [
     imageSrc: "human-2",
     direction: "right",
     top: 623,
-    dist: 444,
+    dist: 554,
     margin: 0,
     width: 154,
     startTime: 0,
@@ -121,7 +121,7 @@ const stillObjects = [
     imageSrc: "human-5",
     direction: "right",
     top: 616,
-    dist: 1498,
+    dist: 1560,
     margin: 0,
     width: 140,
     startTime: 0,

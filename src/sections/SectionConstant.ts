@@ -7,7 +7,7 @@ const AboutTextBlock2: string =
 const AboutTextBlock3: string =
   "We believe that inclusion and diversity bring forth the most creative ideas, so we welcome all disciplines and backgrounds";
 
-const MissionTitle: string = "Our Mission";
+const MissionTitle: string = "OUR MISSION";
 
 const MissionText: string =
   "RowdyHacks aims to cultivate the technology culture and community in San Antonio and southern Texas by enriching the technical knowledge with students of unique and diverse talents by bringing together all disciplines";

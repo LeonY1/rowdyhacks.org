@@ -1,21 +1,28 @@
 import React from "react";
-import { MenuItemContainer, NavTextContainer } from "./NavBarStyle";
+import {
+  MenuItemContainer,
+  NavTextContainer,
+  UnstyledButton
+} from "./NavBarStyle";
 
 function MenuItem(props: {
   title: string;
   link: string;
   scrolledDown: boolean;
+  onClick: () => void;
 }) {
-  const { title, link, scrolledDown } = props;
+  const { title, link, scrolledDown, onClick } = props;
 
   return (
-    <a href={link}>
-      <MenuItemContainer>
-        <NavTextContainer theme={scrolledDown ? "#ffffff" : "#034872"}>
-          {title}
-        </NavTextContainer>
-      </MenuItemContainer>
-    </a>
+    <UnstyledButton onClick={onClick}>
+      <a href={link}>
+        <MenuItemContainer>
+          <NavTextContainer theme={scrolledDown ? "#ffffff" : "#034872"}>
+            {title}
+          </NavTextContainer>
+        </MenuItemContainer>
+      </a>
+    </UnstyledButton>
   );
 }
 

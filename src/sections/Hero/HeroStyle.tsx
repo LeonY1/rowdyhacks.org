@@ -68,7 +68,7 @@ const HeroTitleWrapper = styled.div`
   z-index: 50;
   @media (max-width: 800px) {
     position: relative;
-    padding-top: 65px;
+    padding-top: 100px;
     top: 0px;
     background-color: #cbebe8;
   }
