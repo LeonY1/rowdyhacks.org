@@ -49,7 +49,7 @@ const MissionTextWrapper = styled.div`
 const MissionTitleWrapper = styled.div`
   font-size: 55px;
   @media (max-width: 800px) {
-    font-size: 36px;
+    font-size: 42px;
   }
   font-weight: 700;
   margin-bottom: 30px;

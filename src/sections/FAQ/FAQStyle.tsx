@@ -3,10 +3,10 @@ import styled from "styled-components";
 const FAQTitleWrapper = styled.div`
   font-weight: 700;
   color: #ffffff;
-  font-size: 48px;
+  font-size: 55px;
   margin-bottom: 10px;
   @media (max-width: 760px) {
-    font-size: 36px;
+    font-size: 42px;
   }
 `;
 

@@ -30,10 +30,10 @@ const LocationWrapper = styled.div`
 
 const LocationTitleWrapper = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 55px;
   text-align: center;
   @media (max-width: 800px) {
-    font-size: 36px;
+    font-size: 42px;
     text-align: center;
   }
 `;
