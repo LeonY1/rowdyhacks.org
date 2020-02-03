@@ -64,7 +64,7 @@ function SectionBlock(props: sectionProps) {
   const sectionTheme = sectionColors[sectionNumber];
 
   return (
-    <Divider id={id}>
+    <Divider id={id} key={id + "-section-" + sectionNumber}>
       <DividerMargin {...sectionTheme} />
       <DividerContent {...sectionTheme}>
         {content({ children: null })}

@@ -40,6 +40,7 @@ function NavBar(props: { titles: Array<MenuLink> }) {
             {props.titles.map(function(menuLink: MenuLink) {
               return (
                 <MenuItem
+                  key={menuLink.title + "-nav"}
                   {...menuLink}
                   scrolledDown={scrolledDown}
                   onClick={() => {}}

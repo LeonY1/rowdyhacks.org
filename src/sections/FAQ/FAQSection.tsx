@@ -47,7 +47,7 @@ const FAQContent: React.FC = () => {
         <FaqCol>
           {FAQQuestions.map((value, index) => {
             return (
-              <>
+              <div key={"question-" + index}>
                 {index < FAQQuestions.length / 2 ? (
                   <FaqCard
                     key={"Question" + index}
@@ -62,14 +62,14 @@ const FAQContent: React.FC = () => {
                     </FAQAnswerWrapper>
                   </FaqCard>
                 ) : null}
-              </>
+              </div>
             );
           })}
         </FaqCol>
         <FaqCol>
           {FAQQuestions.map((value, index) => {
             return (
-              <>
+              <div key={"question-" + index}>
                 {index >= FAQQuestions.length / 2 ? (
                   <FaqCard
                     key={"Question" + index}
@@ -84,7 +84,7 @@ const FAQContent: React.FC = () => {
                     </FAQAnswerWrapper>
                   </FaqCard>
                 ) : null}
-              </>
+              </div>
             );
           })}
         </FaqCol>

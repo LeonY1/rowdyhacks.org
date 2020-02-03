@@ -8,7 +8,6 @@ import {
   LocationWrapper
 } from "./LocationStyle";
 import { LocationText } from "../SectionConstant";
-import LocationImage from "../../static/MainCampusMapsV2.png";
 import styled from "styled-components";
 
 function LocationSection() {

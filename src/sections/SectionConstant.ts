@@ -7,10 +7,10 @@ const AboutTextBlock2: string =
 const AboutTextBlock3: string =
   "We believe that inclusion and diversity bring forth the most creative ideas, so we welcome all disciplines and backgrounds";
 
-const MissionTitle: string = "OUR MISSION";
+const MissionTitle: string = "TRACKS";
 
 const MissionText: string =
-  "RowdyHacks aims to cultivate the technology culture and community in San Antonio and southern Texas by enriching the technical knowledge with students of unique and diverse talents by bringing together all disciplines";
+  "There will be three tracks that you can participate in at RowdyHacks. These tracks are General, Learner, and Cyber.";
 
 const FAQQuestions: Array<string> = [
   "How much does it cost to participate?",

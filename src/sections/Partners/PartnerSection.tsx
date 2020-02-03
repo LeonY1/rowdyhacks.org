@@ -64,7 +64,7 @@ const GoldPartnerSection: React.FC = () => {
       {goldPartners.map(partner => {
         const { name, link } = partner;
         return (
-          <a href={link}>
+          <a href={link} key={name + "-partner"}>
             <div>
               <GoldPartnerImage
                 key={name + "Image"}
@@ -85,7 +85,7 @@ const SilverPartnerSection: React.FC = () => {
       {silverPartners.map(partner => {
         const { name, link } = partner;
         return (
-          <a href={link}>
+          <a href={link} key={name + "-partner"}>
             <div>
               <SilverPartnerImage
                 key={name + "Image"}
@@ -106,7 +106,11 @@ const BronzePartnerSection: React.FC = () => {
       {bronzePartners.map(partner => {
         const { name, link } = partner;
         return (
-          <a href={link} style={{ minWidth: "120px", margin: "0px 15px" }}>
+          <a
+            href={link}
+            style={{ minWidth: "120px", margin: "0px 15px" }}
+            key={name + "-partner"}
+          >
             <div>
               <BronzePartnerImage
                 key={name + "Image"}
@@ -127,7 +131,7 @@ const OtherPartnerSection: React.FC = () => {
       {otherPartners.map(partner => {
         const { name, link } = partner;
         return (
-          <a href={link}>
+          <a href={link} key={name + "-partner"}>
             <div>
               <OtherPartnerImage
                 key={name + "Image"}

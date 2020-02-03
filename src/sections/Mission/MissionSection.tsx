@@ -13,7 +13,7 @@ import useWindowWidth from "../../hooks/useWindowWidth";
 
 function MissionSection() {
   return (
-    <SectionBlock sectionNumber={1} id="mission">
+    <SectionBlock sectionNumber={1} id="tracks">
       {{
         content: MissionContent
       }}

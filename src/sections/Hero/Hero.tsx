@@ -69,13 +69,20 @@ function Hero() {
       <HeroTitle />
       <HeroContainer>
         {animationObjects.map((object, index) => {
-          return <Animation {...object} {...objectLocations[index]} />;
+          return (
+            <Animation
+              key={"river-object-" + index}
+              {...object}
+              {...objectLocations[index]}
+            />
+          );
         })}
         {stillObjects.map((object, index) => {
           const { imageSrc, direction } = object;
           if (direction === "right")
             return (
               <StillAnimation
+                key={"human-" + index}
                 src={require("../../static/Animation/" + imageSrc + ".svg")}
                 {...object}
                 {...stillLocations[index]}
@@ -84,6 +91,7 @@ function Hero() {
           else
             return (
               <TurnedStillAnimation
+                key={"human-" + index}
                 src={require("../../static/Animation/" + imageSrc + ".svg")}
                 {...object}
                 {...stillLocations[index]}
