@@ -11,7 +11,7 @@ const NavBarTheme = styled.nav<NavBarProps>`
   transition: all 200ms ease;
   z-index: 100;
   background-color: ${({ scrolledDown }) =>
-    scrolledDown ? "#034872" : "transparent"};
+    scrolledDown ? "#034872" : "#cbebe8"};
 `;
 
 const NavBarMargin = styled.div`
@@ -41,10 +41,10 @@ const LogoImage = styled.img`
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0px 50px;
+  padding: 0px 50px 0px 30px;
   margin: 10px 0px;
   @media (max-width: 800px) {
-    padding: 0px 10px 0px 20px;
+    padding: 0px 10px 0px 10px;
   }
 `;
 

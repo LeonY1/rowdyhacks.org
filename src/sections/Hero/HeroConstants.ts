@@ -80,7 +80,7 @@ const stillObjects = [
   {
     imageSrc: "human-1",
     direction: "left",
-    top: 594,
+    top: 620,
     dist: 169,
     margin: 0,
     width: 160,
@@ -90,7 +90,7 @@ const stillObjects = [
   {
     imageSrc: "human-2",
     direction: "right",
-    top: 623,
+    top: 583,
     dist: 554,
     margin: 0,
     width: 154,
@@ -100,7 +100,7 @@ const stillObjects = [
   {
     imageSrc: "human-3",
     direction: "left",
-    top: 616,
+    top: 609,
     dist: 833,
     margin: 0,
     width: 170,
@@ -110,7 +110,7 @@ const stillObjects = [
   {
     imageSrc: "human-4",
     direction: "left",
-    top: 622,
+    top: 582,
     dist: 1170,
     margin: 0,
     width: 148,
@@ -120,7 +120,7 @@ const stillObjects = [
   {
     imageSrc: "human-5",
     direction: "right",
-    top: 616,
+    top: 670,
     dist: 1560,
     margin: 0,
     width: 140,

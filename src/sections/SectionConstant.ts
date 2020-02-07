@@ -11,7 +11,7 @@ const MissionTitle: string = "TRACKS";
 
 const MissionText: Array<string> = [
   "We have three different tracks at RowdyHacks 2020 you can tailor your project towards.",
-  "For our hackers who create projects that mainly focus on the of the topics of Cybersecurity.",
+  "For our hackers who create projects that mainly focus on the topics of Cybersecurity.",
   "First time coders with no technical experience have the opportunity to learn coding basics and be able to compete against other first time hackers for prizes. This track is specifically for people who have never coded before!",
   "If you already have an idea in mind and it doesn't fall under our Cyber or Learners Tracks, our General Track is for you!"
 ];

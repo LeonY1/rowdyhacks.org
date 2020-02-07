@@ -26,7 +26,9 @@ const MissionContent: React.FC = () => {
   return (
     <MissionContentWrapper>
       {screenWidth >= 800 ? (
-        <MissionImageWrapper src={MissionImage} alt="MissionImage" />
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <MissionImageWrapper src={MissionImage} alt="MissionImage" />
+        </div>
       ) : null}
       <MissionStatementWrapper>
         <MissionTitleWrapper>{MissionTitle}</MissionTitleWrapper>
@@ -43,7 +45,9 @@ const MissionContent: React.FC = () => {
         })}
       </MissionStatementWrapper>
       {screenWidth < 800 ? (
-        <MissionImageWrapper src={MissionImage} alt="MissionImage" />
+        <div>
+          <MissionImageWrapper src={MissionImage} alt="MissionImage" />
+        </div>
       ) : null}
     </MissionContentWrapper>
   );

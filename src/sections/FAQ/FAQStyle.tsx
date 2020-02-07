@@ -29,6 +29,7 @@ const FAQQuestionWrapper = styled.div`
   font-weight: 700;
   display: flex;
   text-align: left;
+  cursor: pointer;
   @media (max-width: 760px) {
     width: 80vw;
   }

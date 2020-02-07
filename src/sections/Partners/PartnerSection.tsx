@@ -25,10 +25,10 @@ function PartnerSection() {
 
 const goldPartners = [
   { name: "FrostBank", link: "https://www.frostbank.com/" },
-  { name: "ManTech", link: "https://www.mantech.com/" },
-  { name: "TechData", link: "https://www.techdata.com/" },
-  { name: "AFCS", link: "http://www.afciviliancareers.com/" },
-  { name: "iHeartMedia", link: "https://www.iheartmedia.com/" }
+  { name: "ManTech", link: "https://www.mantech.com/", paddingTop: 30 },
+  { name: "TechData", link: "https://www.techdata.com/", paddingTop: 30 },
+  { name: "AFCS", link: "http://www.afciviliancareers.com/", paddingTop: 80 },
+  { name: "iHeartMedia", link: "https://www.iheartmedia.com/", paddingTop: 110 }
 ];
 
 const silverPartners = [
@@ -37,11 +37,16 @@ const silverPartners = [
 ];
 
 const bronzePartners = [
-  { name: "CivTechSA", link: "https://www.civtech-sa.com/" },
-  { name: "Facebook", link: "https://www.facebook.com/" },
-  { name: "Google", link: "https://careers.google.com/students/" },
-  { name: "UTSA_COS", link: "https://www.utsa.edu/sciences/" },
-  { name: "Valero", link: "https://www.valero.com/en-us" }
+  { name: "CivTechSA", fileType: "png", link: "https://www.civtech-sa.com/" },
+  { name: "Facebook", fileType: "png", link: "https://www.facebook.com/" },
+  {
+    name: "Google",
+    fileType: "png",
+    link: "https://careers.google.com/students/"
+  },
+  { name: "UTSA_COS", fileType: "png", link: "https://www.utsa.edu/sciences/" },
+  { name: "Valero", fileType: "png", link: "https://www.valero.com/en-us" },
+  { name: "Webhead", fileType: "jpg", link: "https://www.webheadtech.com/" }
 ];
 
 const otherPartners = [{ name: "MLH", link: "https://mlh.io/" }];
@@ -63,9 +68,11 @@ const GoldPartnerSection: React.FC = () => {
     <GoldPartnerContainer>
       {goldPartners.map(partner => {
         const { name, link } = partner;
+        const padding =
+          partner.paddingTop === undefined ? 0 : partner.paddingTop;
         return (
           <a href={link} key={name + "-partner"}>
-            <div>
+            <div style={{ paddingTop: padding }}>
               <GoldPartnerImage
                 key={name + "Image"}
                 src={require("../../static/PartnerLogos/" + name + ".png")}
@@ -104,7 +111,7 @@ const BronzePartnerSection: React.FC = () => {
   return (
     <BronzePartnerContainer>
       {bronzePartners.map(partner => {
-        const { name, link } = partner;
+        const { name, fileType, link } = partner;
         return (
           <a
             href={link}
@@ -114,7 +121,10 @@ const BronzePartnerSection: React.FC = () => {
             <div>
               <BronzePartnerImage
                 key={name + "Image"}
-                src={require("../../static/PartnerLogos/" + name + ".png")}
+                src={require("../../static/PartnerLogos/" +
+                  name +
+                  "." +
+                  fileType)}
                 alt={name}
               />
             </div>
