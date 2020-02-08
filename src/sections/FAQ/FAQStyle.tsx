@@ -5,7 +5,7 @@ const FAQTitleWrapper = styled.div`
   color: #ffffff;
   font-family: Arial-Black;
   font-size: 55px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   @media (max-width: 760px) {
     font-size: 42px;
   }
