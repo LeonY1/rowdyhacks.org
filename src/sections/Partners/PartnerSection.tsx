@@ -50,7 +50,7 @@ const bronzePartners = [
   {
     name: "Posh",
     fileType: "png",
-    link: "https://www.perfectlyposh.com/home/?lang=en_US"
+    link: "https://www.dawnzer.po.sh"
   }
 ];
 

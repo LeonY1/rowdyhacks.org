@@ -51,13 +51,14 @@ const SilverPartnerContainer = styled.div`
 const BronzePartnerImage = styled.img`
   max-height: 120px;
   min-width: 120px;
+  max-width: 260px;
   margin: 10px;
   margin-top: 50px;
   @media (max-width: 800px) {
     max-height: 80px;
     max-width: 120px;
     min-width: 0;
-    margin: 0px 15px;
+    margin: 20px 15px;
   }
 `;
 
@@ -68,7 +69,7 @@ const BronzePartnerContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin: 50px 10px 10px;
-  max-width: 1500px;
+  max-width: 1400px;
   @media (max-width: 800px) {
     margin: 10px;
   }
