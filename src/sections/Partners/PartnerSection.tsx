@@ -27,8 +27,8 @@ const goldPartners = [
   { name: "FrostBank", link: "https://www.frostbank.com/" },
   { name: "ManTech", link: "https://www.mantech.com/", paddingTop: 30 },
   { name: "TechData", link: "https://www.techdata.com/", paddingTop: 30 },
-  { name: "AFCS", link: "http://www.afciviliancareers.com/", paddingTop: 80 },
-  { name: "iHeartMedia", link: "https://www.iheartmedia.com/", paddingTop: 110 }
+  { name: "AFCS", link: "http://www.afciviliancareers.com/" },
+  { name: "iHeartMedia", link: "https://www.iheartmedia.com/", paddingTop: 30 }
 ];
 
 const silverPartners = [
@@ -46,7 +46,12 @@ const bronzePartners = [
   },
   { name: "UTSA_COS", fileType: "png", link: "https://www.utsa.edu/sciences/" },
   { name: "Valero", fileType: "png", link: "https://www.valero.com/en-us" },
-  { name: "Webhead", fileType: "jpg", link: "https://www.webheadtech.com/" }
+  { name: "Webhead", fileType: "jpg", link: "https://www.webheadtech.com/" },
+  {
+    name: "Posh",
+    fileType: "png",
+    link: "https://www.perfectlyposh.com/home/?lang=en_US"
+  }
 ];
 
 const otherPartners = [{ name: "MLH", link: "https://mlh.io/" }];
@@ -72,11 +77,12 @@ const GoldPartnerSection: React.FC = () => {
           partner.paddingTop === undefined ? 0 : partner.paddingTop;
         return (
           <a href={link} key={name + "-partner"}>
-            <div style={{ paddingTop: padding }}>
+            <div>
               <GoldPartnerImage
                 key={name + "Image"}
                 src={require("../../static/PartnerLogos/" + name + ".png")}
                 alt={name}
+                theme={{ padding: padding }}
               />
             </div>
           </a>
