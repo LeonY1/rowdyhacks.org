@@ -56,6 +56,7 @@ const MenuList = styled.ul`
 `;
 
 const MenuItemContainer = styled.a`
+  text-decoration: none;
   float: left;
   padding: 0px 10px;
   transition: opacity 250ms ease-in-out 0s;

@@ -15,13 +15,11 @@ function MenuItem(props: {
 
   return (
     <UnstyledButton onClick={onClick}>
-      <a href={link}>
-        <MenuItemContainer>
-          <NavTextContainer theme={scrolledDown ? "#ffffff" : "#034872"}>
-            {title}
-          </NavTextContainer>
-        </MenuItemContainer>
-      </a>
+      <MenuItemContainer href={link}>
+        <NavTextContainer theme={scrolledDown ? "#ffffff" : "#034872"}>
+          {title}
+        </NavTextContainer>
+      </MenuItemContainer>
     </UnstyledButton>
   );
 }
