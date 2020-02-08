@@ -59,17 +59,19 @@ const MenuItemContainer = styled.a`
   float: left;
   padding: 0px 10px;
   transition: opacity 250ms ease-in-out 0s;
+  cursor: pointer;
   @media (max-width: 800px) {
     margin: 50px 0px;
   }
 `;
 
 const UnstyledButton = styled.button`
+  text-decoration: none;
   background-color: transparent;
   border: 0px;
   font-size: 18px;
   font-family: Helvetica;
-  font-weight: 550;
+  font-weight: 650;
   display: flex;
 `;
 

@@ -52,7 +52,7 @@ const MissionTextWrapper = styled.div`
 
 const MissionTitleWrapper = styled.div`
   font-size: 55px;
-  font-family: Helvetica;
+  font-family: Arial-Black;
   @media (max-width: 800px) {
     font-size: 42px;
   }

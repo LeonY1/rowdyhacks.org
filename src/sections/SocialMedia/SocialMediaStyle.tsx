@@ -8,8 +8,7 @@ const SocialMediaWrapper = styled.div`
 
 const SocialMediaTitleWrapper = styled.div`
   font-size: 55px;
-  font-weight: 700;
-  font-family: Helvetica
+  font-family: Arial-Black;
   margin-bottom: 20px;
   color: #ffffff;
   @media (max-width: 800px) {

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const AboutTitleWrapper = styled.div`
-  font-family: Helvetica;
-  font-weight: 700;
+  font-family: Arial-Black;
+  font-weight: 400;
   color: #ffffff;
   font-size: 55px;
   margin-bottom: 20px;

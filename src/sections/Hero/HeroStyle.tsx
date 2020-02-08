@@ -113,7 +113,8 @@ const TitleButton = styled.button`
 
 const DateWrapper = styled.div`
   font-size: ${props => props.theme.fontSize}px;
-  font-family: Helvetica;
+  font-family: Arial-Black;
+  font-weight: 400;
 `;
 
 export {

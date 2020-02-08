@@ -85,8 +85,8 @@ const PartnerContentWrapper = styled.div`
 
 const PartnerTitleWrapper = styled.div`
   font-size: 55px;
-  font-weight: 700;
-  font-family: Helvetica;
+  font-weight: 400;
+  font-family: Arial-Black;
   margin-bottom: 30px;
   @media (max-width: 800px) {
     font-size: 42px;
