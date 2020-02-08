@@ -7,7 +7,7 @@ interface NavBarProps {
 const NavBarTheme = styled.nav<NavBarProps>`
   position: fixed;
   width: 100vw;
-  max-height: 70px;
+  height: 70px;
   transition: all 200ms ease;
   z-index: 100;
   background-color: ${({ scrolledDown }) =>
@@ -18,6 +18,7 @@ const NavBarMargin = styled.div`
   display: flex;
   height: 70px;
   background: #cbebe8;
+  z-index: 0;
 `;
 
 const NavTextContainer = styled.span`
@@ -26,7 +27,6 @@ const NavTextContainer = styled.span`
 
 const Home = styled.a`
   text-decoration: none;
-  font-size: 40px;
   display: flex;
 `;
 
@@ -68,6 +68,8 @@ const UnstyledButton = styled.button`
   background-color: transparent;
   border: 0px;
   font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 550;
   display: flex;
 `;
 
