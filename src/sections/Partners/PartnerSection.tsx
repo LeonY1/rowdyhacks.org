@@ -37,20 +37,60 @@ const silverPartners = [
 ];
 
 const bronzePartners = [
-  { name: "CivTechSA", fileType: "png", link: "https://www.civtech-sa.com/" },
-  { name: "Facebook", fileType: "png", link: "https://www.facebook.com/" },
+  {
+    name: "CivTechSA",
+    fileType: "png",
+    link: "https://www.civtech-sa.com/",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Facebook",
+    fileType: "png",
+    link: "https://www.facebook.com/",
+    bgColor: "#ffffff"
+  },
   {
     name: "Google",
     fileType: "png",
-    link: "https://careers.google.com/students/"
+    link: "https://careers.google.com/students/",
+    bgColor: "#ffffff"
   },
-  { name: "UTSA_COS", fileType: "png", link: "https://www.utsa.edu/sciences/" },
-  { name: "Valero", fileType: "png", link: "https://www.valero.com/en-us" },
-  { name: "Webhead", fileType: "jpg", link: "https://www.webheadtech.com/" },
+  {
+    name: "UTSA_COS",
+    fileType: "png",
+    link: "https://www.utsa.edu/sciences/",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Valero",
+    fileType: "png",
+    link: "https://www.valero.com/en-us",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Webhead",
+    fileType: "jpg",
+    link: "https://www.webheadtech.com/",
+    bgColor: "#ffffff"
+  },
   {
     name: "Posh",
     fileType: "png",
-    link: "https://www.dawnzer.po.sh"
+    link: "https://www.dawnzer.po.sh",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "UTSA_SDS",
+    fileType: "png",
+    link: "https://provost.utsa.edu/sds/",
+    bgColor: "#212529"
+  },
+  {
+    name: "UTSA_Research",
+    fileType: "png",
+    link:
+      "https://www.utsa.edu/president/organization/vp-search/VPREDKE-Search.html",
+    bgColor: "#ffffff"
   }
 ];
 
@@ -117,7 +157,7 @@ const BronzePartnerSection: React.FC = () => {
   return (
     <BronzePartnerContainer>
       {bronzePartners.map(partner => {
-        const { name, fileType, link } = partner;
+        const { name, fileType, link, bgColor } = partner;
         return (
           <a
             href={link}
@@ -132,6 +172,7 @@ const BronzePartnerSection: React.FC = () => {
                   "." +
                   fileType)}
                 alt={name}
+                theme={{ backgroundColor: bgColor }}
               />
             </div>
           </a>

@@ -50,10 +50,13 @@ const SilverPartnerContainer = styled.div`
 
 const BronzePartnerImage = styled.img`
   max-height: 120px;
+  min-height: 30px;
   min-width: 120px;
-  max-width: 260px;
-  margin: 10px;
+  max-width: 320px;
+  margin: 5px;
   margin-top: 50px;
+  background-color: ${props => props.theme.backgroundColor};
+  padding: 5px;
   @media (max-width: 800px) {
     max-height: 80px;
     max-width: 120px;
@@ -69,7 +72,7 @@ const BronzePartnerContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin: 50px 10px 10px;
-  max-width: 1400px;
+  max-width: 1500px;
   @media (max-width: 800px) {
     margin: 10px;
   }
