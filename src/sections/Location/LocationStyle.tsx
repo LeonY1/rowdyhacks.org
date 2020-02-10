@@ -21,16 +21,17 @@ const LocationWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   @media (max-width: 800px) {
     width: 90vw;
     padding: 10px;
-    align-items: center;
   }
 `;
 
 const LocationTitleWrapper = styled.div`
   font-weight: 700;
   font-size: 55px;
+  font-family: Arial-Black;
   text-align: center;
   @media (max-width: 800px) {
     font-size: 42px;
@@ -51,8 +52,8 @@ const LocationTitleDivider = styled.div`
 
 const LocationTextWrapper = styled.div`
   font-size: 20px;
+  font-family: Helvetica;
   width: 40vw;
-
   @media (max-width: 800px) {
     width: 80vw;
     font-size: 14px;

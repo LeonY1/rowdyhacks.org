@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const AboutTitleWrapper = styled.div`
-  font-weight: 700;
+  font-family: Arial-Black;
+  font-weight: 400;
   color: #ffffff;
   font-size: 55px;
   margin-bottom: 20px;
@@ -19,6 +20,7 @@ const AboutContentWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: Helvetica;
   @media (max-width: 1050px) {
     font-size: 14px;
   }

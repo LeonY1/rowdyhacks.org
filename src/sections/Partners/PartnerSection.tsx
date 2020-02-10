@@ -25,10 +25,10 @@ function PartnerSection() {
 
 const goldPartners = [
   { name: "FrostBank", link: "https://www.frostbank.com/" },
-  { name: "ManTech", link: "https://www.mantech.com/" },
-  { name: "TechData", link: "https://www.techdata.com/" },
+  { name: "ManTech", link: "https://www.mantech.com/", paddingTop: 30 },
+  { name: "TechData", link: "https://www.techdata.com/", paddingTop: 30 },
   { name: "AFCS", link: "http://www.afciviliancareers.com/" },
-  { name: "iHeartMedia", link: "https://www.iheartmedia.com/" }
+  { name: "iHeartMedia", link: "https://www.iheartmedia.com/", paddingTop: 30 }
 ];
 
 const silverPartners = [
@@ -37,11 +37,61 @@ const silverPartners = [
 ];
 
 const bronzePartners = [
-  { name: "CivTechSA", link: "https://www.civtech-sa.com/" },
-  { name: "Facebook", link: "https://www.facebook.com/" },
-  { name: "Google", link: "https://careers.google.com/students/" },
-  { name: "UTSA_COS", link: "https://www.utsa.edu/sciences/" },
-  { name: "Valero", link: "https://www.valero.com/en-us" }
+  {
+    name: "CivTechSA",
+    fileType: "png",
+    link: "https://www.civtech-sa.com/",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Facebook",
+    fileType: "png",
+    link: "https://www.facebook.com/",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Google",
+    fileType: "png",
+    link: "https://careers.google.com/students/",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "UTSA_COS",
+    fileType: "png",
+    link: "https://www.utsa.edu/sciences/",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Valero",
+    fileType: "png",
+    link: "https://www.valero.com/en-us",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Webhead",
+    fileType: "jpg",
+    link: "https://www.webheadtech.com/",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "Posh",
+    fileType: "png",
+    link: "https://www.dawnzer.po.sh",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "UTSA_SDS",
+    fileType: "png",
+    link: "https://provost.utsa.edu/sds/",
+    bgColor: "#212529"
+  },
+  {
+    name: "UTSA_Research",
+    fileType: "png",
+    link:
+      "https://www.utsa.edu/president/organization/vp-search/VPREDKE-Search.html",
+    bgColor: "#ffffff"
+  }
 ];
 
 const otherPartners = [{ name: "MLH", link: "https://mlh.io/" }];
@@ -63,6 +113,8 @@ const GoldPartnerSection: React.FC = () => {
     <GoldPartnerContainer>
       {goldPartners.map(partner => {
         const { name, link } = partner;
+        const padding =
+          partner.paddingTop === undefined ? 0 : partner.paddingTop;
         return (
           <a href={link} key={name + "-partner"}>
             <div>
@@ -70,6 +122,7 @@ const GoldPartnerSection: React.FC = () => {
                 key={name + "Image"}
                 src={require("../../static/PartnerLogos/" + name + ".png")}
                 alt={name}
+                theme={{ padding: padding }}
               />
             </div>
           </a>
@@ -104,7 +157,7 @@ const BronzePartnerSection: React.FC = () => {
   return (
     <BronzePartnerContainer>
       {bronzePartners.map(partner => {
-        const { name, link } = partner;
+        const { name, fileType, link, bgColor } = partner;
         return (
           <a
             href={link}
@@ -114,8 +167,12 @@ const BronzePartnerSection: React.FC = () => {
             <div>
               <BronzePartnerImage
                 key={name + "Image"}
-                src={require("../../static/PartnerLogos/" + name + ".png")}
+                src={require("../../static/PartnerLogos/" +
+                  name +
+                  "." +
+                  fileType)}
                 alt={name}
+                theme={{ backgroundColor: bgColor }}
               />
             </div>
           </a>

@@ -50,27 +50,32 @@ const HeroBg = styled.img`
 const HeroContainer = styled.div`
   overflow: hidden;
   position: relative;
-  @media (max-width: 800px) {
-    background-color: ;
-  }
+  margin-top: 50px;
 `;
 
 const TitleWrapper = styled.div`
   font-size: ${props => props.theme.fontSize}px;
   letter-spacing: ${props => props.theme.letterSpacing}px;
+  font-family: Helvetica;
+  font-weight: 700;
 `;
 
 const HeroTitleWrapper = styled.div`
-  top: 55px;
-  left: ${props => props.theme.margin}px;
+  top: 70px;
+  left: 0px;
   color: #cc64b1;
-  position: absolute;
-  z-index: 50;
-  @media (max-width: 800px) {
-    position: relative;
-    padding-top: 120px;
-    top: 0px;
-    background-color: #cbebe8;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: #cbebe8;
+  margin-bottom: 30px;
+  @media (max-width: 1200px) {
+    margin-bottom: 0px;
+    padding-top: 50px;
+  }
+
+  @media (max-width: 1000px) {
+    padding-top: 60px;
   }
 `;
 
@@ -81,13 +86,13 @@ const HeroTitleContainer = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-  padding-left: 140px;
+  z-index: 50;
+  padding: 2px;
   @media (max-width: 800px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 0px;
   }
 `;
 
@@ -99,14 +104,17 @@ const TitleButton = styled.button`
   height: 48px;
   padding: 10px 10px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
+  font-family: Helvetica;
   color: #fff6c2;
   max-width: 300px;
   cursor: pointer;
 `;
 
 const DateWrapper = styled.div`
-  font-size: 20px;
+  font-size: ${props => props.theme.fontSize}px;
+  font-family: Arial-Black;
+  font-weight: 400;
 `;
 
 export {

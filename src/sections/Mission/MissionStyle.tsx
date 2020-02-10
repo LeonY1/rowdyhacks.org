@@ -12,9 +12,10 @@ const MissionContentWrapper = styled.div`
 `;
 
 const MissionImageWrapper = styled.img`
-  width: 50vw;
+  width: 100%;
+  height: auto;
   @media (max-width: 800px) {
-    width: 90vw;
+    width: 90%;
   }
 `;
 
@@ -22,7 +23,7 @@ const MissionStatementWrapper = styled.div`
   color: #ffffff;
   text-align: center;
   width: 50vw;
-  padding: 50px;
+  padding: 50px 20px;
   @media (max-width: 800px) {
     padding: 0px 20px;
     width: 90vw;
@@ -36,6 +37,7 @@ const MissionStatementWrapper = styled.div`
 
 const MissionTextWrapper = styled.div`
   font-size: 20px;
+  font-family: Helvetica;
   width: 40vw;
   font-weight: 400;
   line-height: 1.35;
@@ -50,6 +52,7 @@ const MissionTextWrapper = styled.div`
 
 const MissionTitleWrapper = styled.div`
   font-size: 55px;
+  font-family: Arial-Black;
   @media (max-width: 800px) {
     font-size: 42px;
   }

@@ -7,17 +7,18 @@ interface NavBarProps {
 const NavBarTheme = styled.nav<NavBarProps>`
   position: fixed;
   width: 100vw;
-  max-height: 70px;
+  height: 70px;
   transition: all 200ms ease;
   z-index: 100;
   background-color: ${({ scrolledDown }) =>
-    scrolledDown ? "#034872" : "transparent"};
+    scrolledDown ? "#034872" : "#cbebe8"};
 `;
 
 const NavBarMargin = styled.div`
   display: flex;
   height: 70px;
   background: #cbebe8;
+  z-index: 0;
 `;
 
 const NavTextContainer = styled.span`
@@ -26,7 +27,6 @@ const NavTextContainer = styled.span`
 
 const Home = styled.a`
   text-decoration: none;
-  font-size: 40px;
   display: flex;
 `;
 
@@ -41,10 +41,10 @@ const LogoImage = styled.img`
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0px 50px;
+  padding: 0px 50px 0px 30px;
   margin: 10px 0px;
   @media (max-width: 800px) {
-    padding: 0px 10px 0px 20px;
+    padding: 0px 10px 0px 10px;
   }
 `;
 
@@ -56,18 +56,23 @@ const MenuList = styled.ul`
 `;
 
 const MenuItemContainer = styled.a`
+  text-decoration: none;
   float: left;
   padding: 0px 10px;
   transition: opacity 250ms ease-in-out 0s;
+  cursor: pointer;
   @media (max-width: 800px) {
     margin: 50px 0px;
   }
 `;
 
 const UnstyledButton = styled.button`
+  text-decoration: none;
   background-color: transparent;
   border: 0px;
   font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 650;
   display: flex;
 `;
 

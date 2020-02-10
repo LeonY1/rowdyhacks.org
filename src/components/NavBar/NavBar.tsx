@@ -114,6 +114,7 @@ const HamburgerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 `;
 
 const Line = styled.div`
@@ -148,6 +149,7 @@ const ExitWrapper = styled.div`
   position: absolute;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 `;
 
 export default NavBar;

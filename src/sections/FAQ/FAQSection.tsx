@@ -86,7 +86,12 @@ const FAQContent: React.FC = () => {
                             <span style={{ marginRight: "5px" }}>
                               Please email
                             </span>
-                            <a href="mailto:team@rowdyhacks.org">
+                            <a
+                              href="mailto:team@rowdyhacks.org"
+                              onClick={e => {
+                                e.stopPropagation();
+                              }}
+                            >
                               team@rowdyhacks.org
                             </a>
                             {FAQAnswers[index]}

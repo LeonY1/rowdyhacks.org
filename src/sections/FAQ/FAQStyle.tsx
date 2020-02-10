@@ -3,8 +3,9 @@ import styled from "styled-components";
 const FAQTitleWrapper = styled.div`
   font-weight: 700;
   color: #ffffff;
+  font-family: Arial-Black;
   font-size: 55px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   @media (max-width: 760px) {
     font-size: 42px;
   }
@@ -16,6 +17,7 @@ const FAQContentWrapper = styled.div`
   justify-content: space-evenly;
   width: 100%;
   font-size: 18px;
+  font-family: Helvetica;
   @media (max-width: 800px) {
     width: 100vw;
     font-size: 14px;
@@ -27,8 +29,10 @@ const FAQContentWrapper = styled.div`
 const FAQQuestionWrapper = styled.div`
   color: #cc64b1;
   font-weight: 700;
+  font-family: Helvetica;
   display: flex;
   text-align: left;
+  cursor: pointer;
   @media (max-width: 760px) {
     width: 80vw;
   }
@@ -44,6 +48,7 @@ const FAQAnswerWrapper = styled.div<AnswerProps>`
   color: black;
   text-align: left;
   font-size: 16px;
+  font-family: Helvetica;
   transition: all 0.5s ease-out;
   margin: 10px 0px 0px 0px;
 `;
