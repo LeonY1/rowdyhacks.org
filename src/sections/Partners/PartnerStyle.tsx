@@ -27,13 +27,14 @@ const GoldPartnerContainer = styled.div`
 `;
 
 const SilverPartnerImage = styled.img`
-  max-height: 160px;
-  max-width: 300px;
+  max-height: 190px;
+  max-width: 370px;
   margin: 10px;
   margin-top: 50px;
   @media (max-width: 800px) {
+    margin: 15px 10px;
     max-height: 80px;
-    max-width: 150px;
+    max-width: 180px;
   }
 `;
 
@@ -44,7 +45,7 @@ const SilverPartnerContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   @media (max-width: 800px) {
-    margin-bottom: 15px;
+    margin: 0px 10px 15px;
   }
 `;
 
@@ -58,10 +59,11 @@ const BronzePartnerImage = styled.img`
   background-color: ${props => props.theme.backgroundColor};
   padding: 5px;
   @media (max-width: 800px) {
-    max-height: 80px;
-    max-width: 120px;
-    min-width: 0;
-    margin: 20px 15px;
+    max-height: 60px;
+    max-width: 140px;
+    min-height: 20px;
+    min-width: 0px;
+    margin: 10px 5px;
   }
 `;
 
@@ -74,7 +76,7 @@ const BronzePartnerContainer = styled.div`
   margin: 50px 10px 10px;
   max-width: 1500px;
   @media (max-width: 800px) {
-    margin: 10px;
+    margin: 15px;
   }
 `;
 
