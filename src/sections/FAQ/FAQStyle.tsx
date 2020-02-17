@@ -49,7 +49,7 @@ const FAQAnswerWrapper = styled.div<AnswerProps>`
   text-align: left;
   font-size: 16px;
   font-family: Helvetica;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
   margin: 10px 0px 0px 0px;
 `;
 

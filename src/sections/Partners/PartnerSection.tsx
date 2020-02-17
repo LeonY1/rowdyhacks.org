@@ -53,7 +53,6 @@ const bronzePartners = [
     link: "https://www.facebook.com/",
     bgColor: "#ffffff"
   },
-
   {
     name: "UTSA_COS",
     fileType: "png",
