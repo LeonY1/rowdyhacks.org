@@ -32,8 +32,12 @@ const goldPartners = [
 ];
 
 const silverPartners = [
+  { name: "Accenture", link: "https://www.accenture.com/us-en" },
   { name: "UTSA_CS", link: "https://cs.utsa.edu/" },
-  { name: "Accenture", link: "https://www.accenture.com/us-en" }
+  {
+    name: "Google",
+    link: "https://careers.google.com/students/"
+  }
 ];
 
 const bronzePartners = [
@@ -50,12 +54,6 @@ const bronzePartners = [
     bgColor: "#ffffff"
   },
   {
-    name: "Google",
-    fileType: "png",
-    link: "https://careers.google.com/students/",
-    bgColor: "#ffffff"
-  },
-  {
     name: "UTSA_COS",
     fileType: "png",
     link: "https://www.utsa.edu/sciences/",
@@ -69,7 +67,7 @@ const bronzePartners = [
   },
   {
     name: "Webhead",
-    fileType: "jpg",
+    fileType: "png",
     link: "https://www.webheadtech.com/",
     bgColor: "#ffffff"
   },
@@ -90,6 +88,12 @@ const bronzePartners = [
     fileType: "png",
     link:
       "https://www.utsa.edu/president/organization/vp-search/VPREDKE-Search.html",
+    bgColor: "#ffffff"
+  },
+  {
+    name: "NSA",
+    fileType: "png",
+    link: "https://www.nsa.gov/",
     bgColor: "#ffffff"
   }
 ];
