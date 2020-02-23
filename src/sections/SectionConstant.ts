@@ -33,7 +33,7 @@ const FAQAnswers: Array<any> = [
 	"RowdyHacks is absolutely FREE thanks to our awesome partners. You don't have to worry about a thing -- we'll provide the food, t-shirts, snacks, and prizes.",
 	'No worries! RowdyHacks is for everyone from all coding and non-coding backgrounds! We will have plenty of mentors and peers to help you learn throughout the event.',
 	"Teams can consist of up to 4 students! We encourage hackers to participate as part of a team. Don't have a team? No worries, we will have an opportunity before the event for you to meet other hackers and form teams!",
-	'Sorry, but RowdyHacks will not be offering travel reimbursements for the hackathon.',
+	'Sorry, but RowdyHacks will not be offering travel reimbursements for this hackathon.',
 	'Anything! You can make a new social media website, a simple weather app, a sentimental analysis tool for tweets...anything in your wildest imagination, you can create. Your team can come prepared with an idea or come up with one on the spot.',
 	'No, all projects must be built from scratch. However, you can start brainstorming your ideas prior to the event. Any team found working on previous projects will be automatically disqualified.',
 	"No problem! RowdyHacks is open to ANY college/university student over 18 years old. We're so excited to see students from all over collaborating and innovating together at this year's event.",

@@ -28,19 +28,33 @@ const goldPartners = [
 	{ name: 'ManTech', link: 'https://www.mantech.com/', paddingTop: 30 },
 	{ name: 'TechData', link: 'https://www.techdata.com/', paddingTop: 30 },
 	{ name: 'AFCS', link: 'http://www.afciviliancareers.com/' },
-	{ name: 'iHeartMedia', link: 'https://www.iheartmedia.com/', paddingTop: 30 },
-	{ name: 'HEB', link: 'https://www.heb.com/', paddingTop: 30 }
+	{ name: 'iHeartMedia', link: 'https://www.iheartmedia.com/', paddingTop: 30 }
 ];
 
 const silverPartners = [
-	{ name: 'Accenture', link: 'https://www.accenture.com/us-en' },
-	{ name: 'UTSA_CS', link: 'https://cs.utsa.edu/' },
+	{
+		name: 'Accenture',
+		fileType: 'png',
+		link: 'https://www.accenture.com/us-en'
+	},
+	{
+		name: 'UTSA_CS',
+		fileType: 'png',
+		link: 'https://cs.utsa.edu/'
+	},
 	{
 		name: 'Google',
+		fileType: 'png',
 		link: 'https://careers.google.com/students/'
 	},
 	{
+		name: 'Google_Geo',
+		fileType: 'jpeg',
+		link: 'https://maps.google.com/'
+	},
+	{
 		name: 'USAA',
+		fileType: 'png',
 		link: 'https://www.usaa.com/'
 	}
 ];
@@ -52,13 +66,6 @@ const bronzePartners = [
 		link: 'https://www.civtech-sa.com/',
 		bgColor: '#ffffff'
 	},
-	{
-		name: 'Facebook',
-		fileType: 'png',
-		link: 'https://www.facebook.com/',
-		bgColor: '#ffffff'
-	},
-
 	{
 		name: 'UTSA_COS',
 		fileType: 'png',
@@ -144,13 +151,13 @@ const SilverPartnerSection: React.FC = () => {
 	return (
 		<SilverPartnerContainer>
 			{silverPartners.map((partner) => {
-				const { name, link } = partner;
+				const { name, link, fileType } = partner;
 				return (
 					<a href={link} key={name + '-partner'}>
 						<div>
 							<SilverPartnerImage
 								key={name + 'Image'}
-								src={require('../../static/PartnerLogos/' + name + '.png')}
+								src={require('../../static/PartnerLogos/' + name + '.' + fileType)}
 								alt={name}
 							/>
 						</div>
