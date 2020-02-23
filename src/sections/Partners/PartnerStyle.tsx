@@ -99,13 +99,29 @@ const PartnerTitleWrapper = styled.div`
 	}
 `;
 
-const OtherPartnerContainer = styled.div``;
+const OtherPartnerContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0px 10px 30px;
+	max-width: 1500px;
+	@media (max-width: 800px) {
+		margin: 15px;
+	}
+`;
 
 const OtherPartnerImage = styled.img`
-	max-height: 200px;
-	margin: 10px;
+	max-height: 100px;
+	max-width: 370px;
+	margin: 20px 20px;
+	padding: 5px;
+	padding-top: ${(props) => props.theme.padding}px;
 	@media (max-width: 800px) {
-		max-height: 100px;
+		margin: 15px 10px;
+		max-height: 80px;
+		max-width: 180px;
 	}
 `;
 

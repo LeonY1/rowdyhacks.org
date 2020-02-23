@@ -110,7 +110,10 @@ const bronzePartners = [
 	}
 ];
 
-const otherPartners = [ { name: 'MLH', link: 'https://mlh.io/' } ];
+const otherPartners = [
+	{ name: 'MLH', link: 'https://mlh.io/', fileType: 'png', paddingTop: 30 },
+	{ name: 'StickerMule', link: 'http://hackp.ac/mlh-stickermule-hackathons', fileType: 'png' }
+];
 
 const PartnerContent: React.FC = () => {
 	return (
@@ -194,14 +197,15 @@ const OtherPartnerSection: React.FC = () => {
 	return (
 		<OtherPartnerContainer>
 			{otherPartners.map((partner) => {
-				const { name, link } = partner;
+				const { name, link, fileType, paddingTop } = partner;
 				return (
 					<a href={link} key={name + '-partner'}>
 						<div>
 							<OtherPartnerImage
 								key={name + 'Image'}
-								src={require('../../static/PartnerLogos/' + name + '.jpg')}
+								src={require('../../static/PartnerLogos/' + name + '.' + fileType)}
 								alt={name}
+								theme={{ padding: paddingTop }}
 							/>
 						</div>
 					</a>
