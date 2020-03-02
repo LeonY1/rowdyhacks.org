@@ -28,7 +28,11 @@ const goldPartners = [
 	{ name: 'ManTech', link: 'https://www.mantech.com/', paddingTop: 30 },
 	{ name: 'TechData', link: 'https://www.techdata.com/', paddingTop: 30 },
 	{ name: 'AFCS', link: 'http://www.afciviliancareers.com/' },
-	{ name: 'iHeartMedia', link: 'https://www.iheartmedia.com/', paddingTop: 30 }
+	{ name: 'iHeartMedia', link: 'https://www.iheartmedia.com/', paddingTop: 30 },
+	{
+		name: 'NSA',
+		link: 'https://www.nsa.gov/'
+	}
 ];
 
 const silverPartners = [
@@ -105,12 +109,6 @@ const bronzePartners = [
 		name: 'UTSA_Research',
 		fileType: 'png',
 		link: 'https://www.utsa.edu/president/organization/vp-search/VPREDKE-Search.html',
-		bgColor: '#ffffff'
-	},
-	{
-		name: 'NSA',
-		fileType: 'png',
-		link: 'https://www.nsa.gov/',
 		bgColor: '#ffffff'
 	},
 	{
