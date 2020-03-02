@@ -44,6 +44,7 @@ const SilverPartnerContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	max-width: 1550px;
 	@media (max-width: 800px) {
 		margin: 0px 10px 15px;
 	}
@@ -74,7 +75,7 @@ const BronzePartnerContainer = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 50px 10px 10px;
-	max-width: 1500px;
+	max-width: 1550px;
 	@media (max-width: 800px) {
 		margin: 15px;
 	}

@@ -56,6 +56,11 @@ const silverPartners = [
 		name: 'USAA',
 		fileType: 'png',
 		link: 'https://www.usaa.com/'
+	},
+	{
+		name: 'CNF',
+		fileType: 'jpeg',
+		link: 'https://www.cnftech.com/welcome'
 	}
 ];
 
@@ -106,6 +111,24 @@ const bronzePartners = [
 		name: 'NSA',
 		fileType: 'png',
 		link: 'https://www.nsa.gov/',
+		bgColor: '#ffffff'
+	},
+	{
+		name: 'Paycom',
+		fileType: 'png',
+		link: 'https://www.paycom.com',
+		bgColor: '#ffffff'
+	},
+	{
+		name: 'NSCC',
+		fileType: 'jpg',
+		link: 'http://www.utsa.edu/president/reporting-offices/nscc/',
+		bgColor: '#ffffff'
+	},
+	{
+		name: 'HEB',
+		fileType: 'png',
+		link: 'https://www.heb.com/',
 		bgColor: '#ffffff'
 	}
 ];
