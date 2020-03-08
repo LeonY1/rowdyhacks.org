@@ -5,10 +5,12 @@ import {
   FAQContentWrapper,
   FAQQuestionWrapper,
   FAQAnswerWrapper,
-  FAQContainer
+  FAQContainer,
+  FAQColumn,
+  FAQCard,
+  QuestionArrow
 } from "./FAQStyle";
 import { FAQQuestions, FAQAnswers } from "../SectionConstant";
-import styled from "styled-components";
 
 function FAQSection() {
   return (
@@ -20,66 +22,72 @@ function FAQSection() {
   );
 }
 
-const FaqCol = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0px 0px;
-  width: 40vw;
-  @media (max-width: 800px) {
-    width: 100vw;
-  }
-`;
+interface Question extends Openable {
+  question: string;
+}
 
-const FaqCard = styled.div`
-  margin: 10px 20px 10px 20px;
-  border-radius: 25px;
-  background: #ffffff;
-  padding: 15px 15px;
-`;
+interface Openable {
+  opened: boolean;
+}
+
+const FAQQuestion: React.FC<Question> = ({ question, opened }) => {
+  return (
+    <FAQQuestionWrapper>
+      <div>{question}</div>
+      <QuestionArrow opened={opened} />
+    </FAQQuestionWrapper>
+  );
+};
 
 const FAQContent: React.FC = () => {
-  const [openedId, setOpenedId] = useState(-1);
+  const [openedArray, setOpenedArray] = useState(
+    new Array(FAQQuestions.length).fill(false)
+  );
+
+  const updateOpenedArray = (index: number) => {
+    return openedArray.map((value, arrayIndex) =>
+      index === arrayIndex ? !value : value
+    );
+  };
 
   return (
     <FAQContainer>
       <FAQTitleWrapper>FAQ</FAQTitleWrapper>
       <FAQContentWrapper>
-        <FaqCol>
+        <FAQColumn>
           {FAQQuestions.map((value, index) => {
             return (
-              <div key={"question-" + index}>
+              <>
                 {index < FAQQuestions.length / 2 ? (
-                  <FaqCard
+                  <FAQCard
                     key={"Question" + index}
                     onClick={() => {
-                      if (openedId !== index) setOpenedId(index);
-                      else setOpenedId(-1);
+                      setOpenedArray(updateOpenedArray(index));
                     }}
                   >
-                    <FAQQuestionWrapper>{value}</FAQQuestionWrapper>
-                    <FAQAnswerWrapper opened={openedId === index}>
+                    <FAQQuestion question={value} opened={openedArray[index]} />
+                    <FAQAnswerWrapper opened={openedArray[index]}>
                       {FAQAnswers[index]}
                     </FAQAnswerWrapper>
-                  </FaqCard>
+                  </FAQCard>
                 ) : null}
-              </div>
+              </>
             );
           })}
-        </FaqCol>
-        <FaqCol>
+        </FAQColumn>
+        <FAQColumn>
           {FAQQuestions.map((value, index) => {
             return (
-              <div key={"question-" + index}>
+              <>
                 {index >= FAQQuestions.length / 2 ? (
-                  <FaqCard
+                  <FAQCard
                     key={"Question" + index}
                     onClick={() => {
-                      if (openedId !== index) setOpenedId(index);
-                      else setOpenedId(-1);
+                      setOpenedArray(updateOpenedArray(index));
                     }}
                   >
-                    <FAQQuestionWrapper>{value}</FAQQuestionWrapper>
-                    <FAQAnswerWrapper opened={openedId === index}>
+                    <FAQQuestion question={value} opened={openedArray[index]} />
+                    <FAQAnswerWrapper opened={openedArray[index]}>
                       {index === FAQQuestions.length - 1 ? (
                         <>
                           <span>
@@ -101,12 +109,12 @@ const FAQContent: React.FC = () => {
                         <span>{FAQAnswers[index]}</span>
                       )}
                     </FAQAnswerWrapper>
-                  </FaqCard>
+                  </FAQCard>
                 ) : null}
-              </div>
+              </>
             );
           })}
-        </FaqCol>
+        </FAQColumn>
       </FAQContentWrapper>
     </FAQContainer>
   );
