@@ -86,10 +86,10 @@ const FAQCard = styled.div`
 const QuestionArrow = styled.div<AnswerProps>`
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 
-  ${props => (props.opened ? "border-bottom" : "border-top")}: 15px solid
+  ${props => (props.opened ? "border-bottom" : "border-top")}: 12px solid
     #cc64b1;
 `;
 
