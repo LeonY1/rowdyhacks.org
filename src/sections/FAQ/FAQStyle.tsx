@@ -88,6 +88,7 @@ const QuestionArrow = styled.div<AnswerProps>`
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
+  margin: 0px 5px;
 
   ${props => (props.opened ? "border-bottom" : "border-top")}: 12px solid
     #cc64b1;
