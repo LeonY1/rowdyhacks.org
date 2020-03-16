@@ -11,6 +11,7 @@ import {
   QuestionArrow
 } from "./FAQStyle";
 import { FAQQuestions, FAQAnswers } from "../SectionConstant";
+import FAQLink from "./FAQLink";
 
 function FAQSection() {
   return (
@@ -56,62 +57,37 @@ const FAQContent: React.FC = () => {
       <FAQContentWrapper>
         <FAQColumn>
           {FAQQuestions.map((value, index) => {
+            if (index >= FAQQuestions.length / 2) return null;
             return (
-              <>
-                {index < FAQQuestions.length / 2 ? (
-                  <FAQCard
-                    key={"Question" + index}
-                    onClick={() => {
-                      setOpenedArray(updateOpenedArray(index));
-                    }}
-                  >
-                    <FAQQuestion question={value} opened={openedArray[index]} />
-                    <FAQAnswerWrapper opened={openedArray[index]}>
-                      {FAQAnswers[index]}
-                    </FAQAnswerWrapper>
-                  </FAQCard>
-                ) : null}
-              </>
+              <FAQCard
+                key={"Question" + index}
+                onClick={() => {
+                  setOpenedArray(updateOpenedArray(index));
+                }}
+              >
+                <FAQQuestion question={value} opened={openedArray[index]} />
+                <FAQAnswerWrapper opened={openedArray[index]}>
+                  {FAQAnswers[index]}
+                </FAQAnswerWrapper>
+              </FAQCard>
             );
           })}
         </FAQColumn>
         <FAQColumn>
           {FAQQuestions.map((value, index) => {
+            if (index < FAQQuestions.length / 2) return null;
             return (
-              <>
-                {index >= FAQQuestions.length / 2 ? (
-                  <FAQCard
-                    key={"Question" + index}
-                    onClick={() => {
-                      setOpenedArray(updateOpenedArray(index));
-                    }}
-                  >
-                    <FAQQuestion question={value} opened={openedArray[index]} />
-                    <FAQAnswerWrapper opened={openedArray[index]}>
-                      {index === FAQQuestions.length - 1 ? (
-                        <>
-                          <span>
-                            <span style={{ marginRight: "5px" }}>
-                              Please email
-                            </span>
-                            <a
-                              href="mailto:team@rowdyhacks.org"
-                              onClick={e => {
-                                e.stopPropagation();
-                              }}
-                            >
-                              team@rowdyhacks.org
-                            </a>
-                            {FAQAnswers[index]}
-                          </span>
-                        </>
-                      ) : (
-                        <span>{FAQAnswers[index]}</span>
-                      )}
-                    </FAQAnswerWrapper>
-                  </FAQCard>
-                ) : null}
-              </>
+              <FAQCard
+                key={"Question" + index}
+                onClick={() => {
+                  setOpenedArray(updateOpenedArray(index));
+                }}
+              >
+                <FAQQuestion question={value} opened={openedArray[index]} />
+                <FAQAnswerWrapper opened={openedArray[index]}>
+                  <FAQLink message={FAQAnswers[index]} />
+                </FAQAnswerWrapper>
+              </FAQCard>
             );
           })}
         </FAQColumn>
