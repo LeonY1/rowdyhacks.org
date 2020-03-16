@@ -5,4 +5,12 @@ const BackgroundTheme = styled.div`
   background-color: #ffffff;
 `;
 
-export { BackgroundTheme };
+const Holder = styled.div`
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+`;
+
+export { BackgroundTheme, Holder };
