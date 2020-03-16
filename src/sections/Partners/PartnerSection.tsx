@@ -44,7 +44,7 @@ const silverPartners = [
   },
   {
     name: "Google_Geo",
-    fileType: "jpeg",
+    fileType: "jpg",
     link: "https://maps.google.com/"
   },
   {
@@ -54,7 +54,7 @@ const silverPartners = [
   },
   {
     name: "CNF",
-    fileType: "jpeg",
+    fileType: "jpg",
     link: "https://www.cnftech.com/welcome"
   },
   {
@@ -97,7 +97,7 @@ const bronzePartners = [
   },
   {
     name: "HEB",
-    fileType: "jpeg",
+    fileType: "jpg",
     link: "https://www.heb.com/",
     bgColor: "#ffffff"
   },
