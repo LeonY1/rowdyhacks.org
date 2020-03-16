@@ -28,8 +28,7 @@ const goldPartners = [
   { name: "ManTech", link: "https://www.mantech.com/", paddingTop: 30 },
   { name: "TechData", link: "https://www.techdata.com/", paddingTop: 30 },
   { name: "AFCS", link: "http://www.afciviliancareers.com/" },
-  { name: "iHeartMedia", link: "https://www.iheartmedia.com/", paddingTop: 30 },
-  { name: "NSA", link: "https://www.nsa.gov/" }
+  { name: "iHeartMedia", link: "https://www.iheartmedia.com/", paddingTop: 30 }
 ];
 
 const silverPartners = [
@@ -132,11 +131,20 @@ const bronzePartners = [
     link:
       "https://www.utsa.edu/president/organization/vp-search/VPREDKE-Search.html",
     bgColor: "#ffffff"
+  },
+  {
+    name: "NSA",
+    fileType: "png",
+    link: "https://www.nsa.gov/"
   }
 ];
 
 const otherPartners = [
-  { name: "MLH", link: "https://mlh.io/", fileType: "png", paddingTop: 30 },
+  {
+    name: "MLH",
+    link: "https://mlh.io/",
+    fileType: "png"
+  },
   {
     name: "StickerMule",
     link: "http://hackp.ac/mlh-stickermule-hackathons",
@@ -146,6 +154,11 @@ const otherPartners = [
     name: "TiffsTreat",
     link: "https://www.cookiedelivery.com/",
     fileType: "jpg"
+  },
+  {
+    name: "Piccadilly",
+    link: "https://popcornpiccadilly.com/",
+    fileType: "png"
   }
 ];
 
@@ -242,7 +255,7 @@ const OtherPartnerSection: React.FC = () => {
   return (
     <OtherPartnerContainer>
       {otherPartners.map(partner => {
-        const { name, link, fileType, paddingTop } = partner;
+        const { name, link, fileType } = partner;
         return (
           <a href={link} key={name + "-partner"}>
             <div>
@@ -253,7 +266,6 @@ const OtherPartnerSection: React.FC = () => {
                   "." +
                   fileType)}
                 alt={name}
-                theme={{ padding: paddingTop }}
               />
             </div>
           </a>

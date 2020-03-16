@@ -5,7 +5,7 @@ interface NavBarProps {
 }
 
 const NavBarTheme = styled.nav<NavBarProps>`
-  position: fixed;
+  position: static;
   width: 100vw;
   height: 70px;
   transition: all 200ms ease;
@@ -14,11 +14,15 @@ const NavBarTheme = styled.nav<NavBarProps>`
     scrolledDown ? "#034872" : "#cbebe8"};
 `;
 
-const NavBarMargin = styled.div`
+interface NavBarMarginProps {
+  size: number;
+}
+
+const NavBarMargin = styled.div<NavBarMarginProps>`
   display: flex;
-  height: 70px;
+  height: ${({ size }) => size}px;
   background: #cbebe8;
-  z-index: 0;
+  z-index: -1;
 `;
 
 const NavTextContainer = styled.span`
@@ -41,8 +45,7 @@ const LogoImage = styled.img`
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0px 50px 0px 30px;
-  margin: 10px 0px;
+  padding: 10px 50px 10px 30px;
   @media (max-width: 800px) {
     padding: 0px 10px 0px 10px;
   }
@@ -51,7 +54,6 @@ const NavBarContainer = styled.div`
 const MenuList = styled.ul`
   display: flex;
   list-style-type: none;
-  overflow: hidden;
   padding-right: 150px;
 `;
 

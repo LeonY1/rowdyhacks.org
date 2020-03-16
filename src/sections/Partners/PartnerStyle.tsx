@@ -112,11 +112,10 @@ const OtherPartnerContainer = styled.div`
 `;
 
 const OtherPartnerImage = styled.img`
-  max-height: 100px;
+  max-height: 120px;
   max-width: 370px;
   margin: 20px 20px;
   padding: 5px;
-  padding-top: ${props => props.theme.padding}px;
   @media (max-width: 800px) {
     margin: 15px 10px;
     max-height: 80px;

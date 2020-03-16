@@ -1,15 +1,21 @@
 import React, { Suspense } from "react";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Hero from "./sections/Hero/Hero";
+import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
+import UpdateSection from "./sections/Updates/UpdateSection";
 import GlobalFonts from "./fonts/fonts";
+import Alerts from "./components/Alerts";
+import { Holder } from "./AppStyle";
+import { NavBarMargin } from "./components/NavBar/NavBarStyle";
 
 const titleNames = [
-  { title: "About", link: "#about" },
-  { title: "Tracks", link: "#tracks" },
-  { title: "FAQ", link: "#faq" },
-  { title: "Location", link: "#location" },
-  { title: "Partners", link: "#partners" }
+  { title: "About", link: "/#about" },
+  { title: "Tracks", link: "/#tracks" },
+  { title: "FAQ", link: "/#faq" },
+  { title: "Location", link: "/#location" },
+  { title: "Partners", link: "/#partners" }
 ];
 
 const LazyLoadedSections = React.lazy(() =>
@@ -20,11 +26,41 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <GlobalFonts />
-      <NavBar titles={titleNames} />
+      <NavBarMargin size={100} />
+
+      <BrowserRouter>
+        <Switch>
+          <Route path="/updates" component={Updates} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+};
+
+const Home: React.FC = () => {
+  return (
+    <div>
+      <Holder>
+        <Alerts />
+        <NavBar titles={titleNames} />
+      </Holder>
       <Hero />
       <Suspense fallback={null}>
         <LazyLoadedSections />
       </Suspense>
+    </div>
+  );
+};
+
+const Updates: React.FC = () => {
+  return (
+    <div>
+      <Holder>
+        <NavBar titles={titleNames} />
+      </Holder>
+      <UpdateSection />
+      <SocialMediaSection />
     </div>
   );
 };

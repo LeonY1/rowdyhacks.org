@@ -32,20 +32,20 @@ const FAQQuestions: Array<string> = [
 
 const FAQAnswers: Array<any> = [
   "A hackathon is a 24 hour event where teams collaborate on a project to create social impact, satisfy company challenges, and innovate new solutions. At RowdyHacks, mentors will be willing to assist you on your quest to creating your project.",
-  "RowdyHacks is absolutely FREE thanks to our awesome partners. You don't have to worry about a thing -- we'll provide the food, t-shirts, snacks, and prizes.",
+  "RowdyHacks is absolutely FREE thanks to our awesome partners. You don't have to worry about a thing -- we'll provide t-shirts, swag, and prizes.",
   "No worries! RowdyHacks is for everyone from all coding and non-coding backgrounds! We will have plenty of mentors and peers to help you learn throughout the event.",
   "Teams can consist of up to 4 students! We encourage hackers to participate as part of a team. Don't have a team? No worries, we will have an opportunity before the event for you to meet other hackers and form teams!",
   "Anything! You can make a new social media website, a simple weather app, a sentimental analysis tool for tweets...anything in your wildest imagination, you can create. Your team can come prepared with an idea or come up with one on the spot.",
   "No, all projects must be built from scratch. However, you can start brainstorming your ideas prior to the event. Any team found working on previous projects will be automatically disqualified.",
-  "RowdyHacks will be providing a reimbursement of $25 for carpooling to the event. However, in order to be eligible for the reimbursement, you must submit a project to be judged at the end of the event.",
+  "RowdyHacks will be completely online, so RowdyHacks will not be providing any sort of reimbursement for traveling.",
   "No problem! RowdyHacks is open to ANY college/university student over 18 years old. We're so excited to see students from all over collaborating and innovating together at this year's event.",
   "Any hardware you plan on using for the project -- your laptop, charger, portable mouse, phone, Raspberry Pi, VR headset, robots, etc. You might also want to bring a change of clothes and toiletries.",
-  "We will be following local, regional, and national guidelines in regards to this event. We will be encouraging cleaning habits throughout the event. We highly recommend anyone who feels ill to stay home.",
-  ". We will get back to you and give you the best support."
+  "We will be moving everything to virtual events. For more information please go to https://www.rowdyhacks.io/updates",
+  "Please e-mail team@rowdyhacks.org. We will get back to you and give you the best support."
 ];
 
 const LocationText: string =
-  "RowdyHacks will be held at UTSA's Main Campus at the HEB Ballrooms in the UTSA Student Union.";
+  "RowdyHacks will be held completely online. However, check-in will both be virtual and at UTSA Main Campus's HEB Ballrooms in the UTSA Student Union from 8 AM to 12 PM on March 28th.";
 
 const SocialMediaText: string =
   "For live updates and announcements, follow us on social media!";
@@ -76,6 +76,19 @@ const socialLogos: Array<SocialLogo> = [
   }
 ];
 
+const UpdatesConstants = {
+  updates: [
+    {
+      title: "Coronavirus Update",
+      date: "March 15, 2020",
+      message: [
+        "RowdyHacks 2020 is in 13 days! 🎉 The health and safety of all those involved in RowdyHacks is our number one priority, and any decision our board makes will put that first and foremost. Due to the Coronavirus COVID-19, we have decided to move RowdyHacks online. This means RowdyHacks will be virtual! All workshops, ceremonies, and activities will still be available through streaming and recordings. All prizes and swag will be shipped out as well! 🎁📦",
+        "RowdyHacks swag is on the way and it is a necessity that you get all the amazing swag (shirts, mugs, stickers, socks, snacks, +more!). If you are local to San Antonio, TX, we will be on UTSA Campus in the HEB Student Union Galleria on Saturday March 28th from 8 AM - 12 PM giving out all the RowdyHacks swag you could ever want. If you're not local, please update your hacker application with a valid mailing address so we can send you all your goodies. "
+      ]
+    }
+  ]
+};
+
 export {
   AboutTextBlock1,
   AboutTextBlock2,
@@ -87,5 +100,6 @@ export {
   LocationText,
   SocialMediaText,
   FooterText,
-  socialLogos
+  socialLogos,
+  UpdatesConstants
 };

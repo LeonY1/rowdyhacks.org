@@ -69,15 +69,14 @@ function SectionBlock(props: sectionProps) {
       <DividerContent {...sectionTheme}>
         {content({ children: null })}
       </DividerContent>
-      {(() => {
-        if (sectionTheme.theme.src === undefined) return <DividerMargin />;
-        return (
-          <DividerFooter
-            src={require("../../static/" + sectionTheme.theme.src + ".png")}
-            alt={sectionTheme.theme.altName}
-          />
-        );
-      })()}
+      {sectionTheme.theme.src === undefined ? (
+        <DividerMargin />
+      ) : (
+        <DividerFooter
+          src={require("../../static/" + sectionTheme.theme.src + ".png")}
+          alt={sectionTheme.theme.altName}
+        />
+      )}
     </Divider>
   );
 }
