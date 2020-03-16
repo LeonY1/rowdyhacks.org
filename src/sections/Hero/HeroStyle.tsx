@@ -50,7 +50,6 @@ const HeroBg = styled.img`
 const HeroContainer = styled.div`
   overflow: hidden;
   position: relative;
-  margin-top: 50px;
 `;
 
 const TitleWrapper = styled.div`
@@ -58,17 +57,16 @@ const TitleWrapper = styled.div`
   letter-spacing: ${props => props.theme.letterSpacing}px;
   font-family: Helvetica;
   font-weight: 700;
+  padding-top: 20px;
 `;
 
 const HeroTitleWrapper = styled.div`
-  top: 70px;
   left: 0px;
   color: #cc64b1;
   position: relative;
   z-index: 10;
   width: 100%;
   background-color: #cbebe8;
-  margin-bottom: 30px;
   @media (max-width: 1200px) {
     margin-bottom: 0px;
     padding-top: 50px;
