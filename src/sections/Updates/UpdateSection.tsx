@@ -30,7 +30,7 @@ const UpdateSection: React.FC = () => {
     <>
       {windowWidth > 800 && <UpdateTopMargin />}
       <UpdateTheme>
-        <UpdateTitle>ROWDY Updates</UpdateTitle>
+        <UpdateTitle>ROWDYHACKS UPDATES</UpdateTitle>
         <UpdateContent>
           <UpdateTable>
             <UpdateTableTitle>Updates</UpdateTableTitle>
