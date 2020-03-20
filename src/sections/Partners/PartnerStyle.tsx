@@ -116,6 +116,7 @@ const OtherPartnerImage = styled.img`
   max-width: 370px;
   margin: 20px 20px;
   padding: 5px;
+  background-color: ${props => props.theme.backgroundColor};
   @media (max-width: 800px) {
     margin: 15px 10px;
     max-height: 80px;
