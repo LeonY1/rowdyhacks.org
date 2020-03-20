@@ -8,6 +8,7 @@ import {
   UpdateBlockTitle,
   UpdateBlockDate,
   UpdateContent,
+  UpdateMessageSection,
   VerticalDivider,
   UpdateListItem,
   UpdateTableTitle,
@@ -29,36 +30,44 @@ const UpdateSection: React.FC = () => {
     <>
       {windowWidth > 800 && <UpdateTopMargin />}
       <UpdateTheme>
-        <UpdateTitle>RowdyHacks Updates</UpdateTitle>
+        <UpdateTitle>ROWDY Updates</UpdateTitle>
         <UpdateContent>
           <UpdateTable>
             <UpdateTableTitle>Updates</UpdateTableTitle>
-            {updates.reverse().map(({ date }) => {
-              return (
-                <UpdateListItem
-                  key={date.toLowerCase()}
-                  href={"#" + convertDate(date.toLowerCase())}
-                >
-                  {date}
-                </UpdateListItem>
-              );
-            })}
+            {updates
+              .slice()
+              .reverse()
+              .map(({ date }) => {
+                return (
+                  <UpdateListItem
+                    key={date.toLowerCase()}
+                    href={"#" + convertDate(date.toLowerCase())}
+                  >
+                    {date}
+                  </UpdateListItem>
+                );
+              })}
           </UpdateTable>
           <VerticalDivider />
-          {updates.reverse().map(({ title, date, message }) => {
-            return (
-              <UpdateBlockSection
-                key={date.toLowerCase()}
-                id={convertDate(date.toLowerCase())}
-              >
-                <UpdateBlockTitle>{title}</UpdateBlockTitle>
-                <UpdateBlockDate>{date}</UpdateBlockDate>
-                {message.map(paragraph => {
-                  return <UpdateParagraph>{paragraph}</UpdateParagraph>;
-                })}
-              </UpdateBlockSection>
-            );
-          })}
+          <UpdateMessageSection>
+            {updates
+              .slice()
+              .reverse()
+              .map(({ title, date, message }) => {
+                return (
+                  <UpdateBlockSection
+                    key={date.toLowerCase()}
+                    id={convertDate(date.toLowerCase())}
+                  >
+                    <UpdateBlockTitle>{title}</UpdateBlockTitle>
+                    <UpdateBlockDate>{date}</UpdateBlockDate>
+                    {message.map(paragraph => {
+                      return <UpdateParagraph>{paragraph}</UpdateParagraph>;
+                    })}
+                  </UpdateBlockSection>
+                );
+              })}
+          </UpdateMessageSection>
         </UpdateContent>
       </UpdateTheme>
     </>
