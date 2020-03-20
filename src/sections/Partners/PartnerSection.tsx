@@ -33,11 +33,6 @@ const goldPartners = [
 
 const silverPartners = [
   {
-    name: "Accenture",
-    fileType: "png",
-    link: "https://www.accenture.com/us-en"
-  },
-  {
     name: "Google",
     fileType: "png",
     link: "https://careers.google.com/students/"
@@ -136,6 +131,11 @@ const bronzePartners = [
     name: "NSA",
     fileType: "png",
     link: "https://www.nsa.gov/"
+  },
+  {
+    name: "ATT",
+    fileType: "png",
+    link: "https://www.att.com/"
   }
 ];
 
@@ -159,6 +159,12 @@ const otherPartners = [
     name: "Piccadilly",
     link: "https://popcornpiccadilly.com/",
     fileType: "png"
+  },
+  {
+    name: "Nerd",
+    link: "http://www.nerdfocus.com/",
+    fileType: "png",
+    bgColor: "#000000"
   }
 ];
 
@@ -255,7 +261,7 @@ const OtherPartnerSection: React.FC = () => {
   return (
     <OtherPartnerContainer>
       {otherPartners.map(partner => {
-        const { name, link, fileType } = partner;
+        const { name, link, fileType, bgColor } = partner;
         return (
           <a href={link} key={name + "-partner"}>
             <div>
@@ -266,6 +272,7 @@ const OtherPartnerSection: React.FC = () => {
                   "." +
                   fileType)}
                 alt={name}
+                theme={{ backgroundColor: bgColor }}
               />
             </div>
           </a>
