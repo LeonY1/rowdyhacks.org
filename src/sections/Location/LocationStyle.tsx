@@ -4,6 +4,8 @@ const LocationContainer = styled.div`
   display: flex;
   margin: 40px 0px;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 
   @media (max-width: 800px) {
@@ -16,7 +18,6 @@ const LocationContainer = styled.div`
 const LocationWrapper = styled.div`
   color: #4d4d4d;
   text-align: center;
-  width: 50vw;
   padding: 2.5vh 2.5vw 2.5vh 2vw;
   display: flex;
   flex-direction: column;
@@ -53,9 +54,7 @@ const LocationTitleDivider = styled.div`
 const LocationTextWrapper = styled.div`
   font-size: 20px;
   font-family: Helvetica;
-  width: 40vw;
   @media (max-width: 800px) {
-    width: 80vw;
     font-size: 14px;
   }
   text-align: center;
