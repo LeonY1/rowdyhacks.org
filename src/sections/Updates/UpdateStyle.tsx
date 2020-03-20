@@ -91,6 +91,11 @@ const UpdateTable = styled.div`
   flex-direction: column;
 `;
 
+const UpdateMessageSection = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export {
   UpdateTheme,
   UpdateTopMargin,
@@ -103,5 +108,6 @@ export {
   VerticalDivider,
   UpdateListItem,
   UpdateTableTitle,
-  UpdateTable
+  UpdateTable,
+  UpdateMessageSection
 };
