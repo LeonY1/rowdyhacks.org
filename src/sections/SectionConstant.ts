@@ -96,6 +96,132 @@ const UpdatesConstants = {
   ]
 };
 
+const ScheduleConstants = {
+  days: [
+    {
+      date: "March 28th",
+      events: [
+        {
+          title: "Check-in Begins",
+          time: "8:00 AM",
+          location: "Discord"
+        },
+        {
+          title: "Virtual Tabling Begins on Discord",
+          time: "9:00 AM",
+          location: "Zoom"
+        },
+        {
+          title: "Opening Ceremony",
+          time: "11:00 AM",
+          location: "Youtube"
+        },
+        {
+          title: "Virtual Tabling Continues on Discord",
+          time: "12:00 PM",
+          location: "Zoom"
+        },
+        {
+          title: "Google Workshop #1: Google Geo",
+          time: "1:30 PM",
+          location: "Google Hangouts"
+        },
+        {
+          title: "Learners Workshop #1: Git/Github",
+          time: "1:30 PM",
+          location: "Zoom (Archives on Youtube)"
+        },
+        {
+          title:
+            "TechData Workshop: Tools to Increase Security Posture from IBM",
+          time: "1:30 PM",
+          location: "Zoom (Archives will be on Youtube)"
+        },
+        {
+          title: "Google Workshop #2: Open-source API",
+          time: "2:30 PM",
+          location: "Google Hangouts"
+        },
+        {
+          title: "Learners Workshop #2: Intro to Java",
+          time: "3:00 PM",
+          location: "Zoom (Archives on Youtube)"
+        },
+        {
+          title: "MLH Side Event: CTF",
+          time: "4:00 PM",
+          location: "TBD"
+        },
+        {
+          title: "Learners Workshop #3: Intro to Web Development",
+          time: "4:30 PM",
+          location: "Zoom (Archives on Youtube)"
+        },
+        {
+          title: "Loteria (Mexican Bingo) Activity",
+          time: "5:00 PM",
+          location: "Discord"
+        },
+        {
+          title: "Learners Workshop #4: Computer Vision",
+          time: "6:00 PM",
+          location: "Zoom (Archives on Youtube)"
+        },
+        {
+          title: "Learners Workshop #5: The Importance of UI/UX",
+          time: "7:30 PM",
+          location: "Zoom (Archives on Youtube)"
+        },
+        {
+          title: "Loteria (Mexican Bingo) Activity",
+          time: "8:30 PM",
+          location: "Discord"
+        },
+        {
+          title: "MLH Side Event: Slideshow Karaoke",
+          time: "9:00 PM",
+          location: "TBD"
+        }
+      ]
+    },
+    {
+      date: "March 29th",
+      events: [
+        {
+          title: "Bob Ross with Microsoft Paint",
+          time: "12:30 AM",
+          location: "Discord"
+        },
+        {
+          title: "Loteria (Mexican Bingo) Activity",
+          time: "8:00 AM",
+          location: "Discord"
+        },
+        {
+          title: "Submissions Due",
+          time: "12:00 PM",
+          location: "Devpost"
+        },
+        {
+          title: "Hacking Ends and Judging Begins",
+          time: "1:00 PM",
+          location: "Devpost"
+        },
+        {
+          title: "Closing Ceremony",
+          time: "3:00 PM",
+          location: "Youtube"
+        },
+        {
+          title: "Event Ends",
+          time: "4:00 PM",
+          location: ""
+        }
+      ]
+    }
+  ]
+};
+
 export {
   AboutTextBlock1,
   AboutTextBlock2,
@@ -108,5 +234,6 @@ export {
   SocialMediaText,
   FooterText,
   socialLogos,
-  UpdatesConstants
+  UpdatesConstants,
+  ScheduleConstants
 };
