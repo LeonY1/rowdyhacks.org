@@ -20,7 +20,9 @@ const DividerMargin = styled.div`
 const DividerContent = styled.div`
   display: flex;
   padding-top: calc(${props => props.theme.margin}px * -1);
-  background: ${props => props.theme.main};
+  ${props => (props.theme.main ? `background:${props.theme.main};` : "")}
+  ${props =>
+    props.theme.mainImage ? `background-image: ${props.theme.mainImage};` : ""}
   z-index: ${props => props.theme.zindex};
   flex-direction: column;
   align-items: center;
