@@ -51,7 +51,7 @@ function HeroTitle() {
             window.location.href = "https://apply.rowdyhacks.io/login.html";
           }}
         >
-          Apply to be a hacker!
+          Check your profile!
         </TitleButton>
       </ButtonWrapper>
     </HeroTitleWrapper>
