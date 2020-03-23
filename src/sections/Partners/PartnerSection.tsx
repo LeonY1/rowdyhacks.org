@@ -136,6 +136,11 @@ const bronzePartners = [
     name: "ATT",
     fileType: "png",
     link: "https://www.att.com/"
+  },
+  {
+    name: "Twilio",
+    fileType: "png",
+    link: "https://www.twilio.com/"
   }
 ];
 
