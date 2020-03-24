@@ -9,9 +9,14 @@ import {
 } from "./LocationStyle";
 import { LocationText } from "../SectionConstant";
 
-function LocationSection() {
+interface LocationSectionProps {
+  sectionNumber: number;
+}
+
+function LocationSection(props: LocationSectionProps) {
+  const { sectionNumber } = props;
   return (
-    <SectionBlock sectionNumber={3} id="location">
+    <SectionBlock sectionNumber={sectionNumber} id="location">
       {{
         content: LocationContent
       }}
