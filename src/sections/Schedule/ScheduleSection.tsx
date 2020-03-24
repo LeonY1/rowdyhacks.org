@@ -1,20 +1,22 @@
 import React from "react";
 import SectionBlock from "../../components/SectionDividers/SectionBlock";
 import { ScheduleConstants } from "../SectionConstant";
-import { ScheduleBlock, ScheduleDate, ScheduleEvent } from "./ScheduleStyle";
+import {
+  ScheduleBlock,
+  ScheduleDate,
+  ScheduleEvent,
+  ScheduleEventTitle,
+  ScheduleEventTime,
+  ScheduleEventLocation,
+  ScheduleTitle,
+  ScheduleTableDiv
+} from "./ScheduleStyle";
 
 function ScheduleSection() {
   return (
     <SectionBlock sectionNumber={4} id="schedule">
       {{
-        content: () => {
-          return (
-            <div>
-              <div>Schedule</div>
-              <Schedule />
-            </div>
-          );
-        }
+        content: Schedule
       }}
     </SectionBlock>
   );
@@ -23,27 +25,43 @@ function ScheduleSection() {
 const Schedule: React.FC = () => {
   const { days } = ScheduleConstants;
   return (
-    <ScheduleBlock>
-      {days.map(({ date, events }) => {
-        return (
-          <div>
-            <ScheduleDate>{date}</ScheduleDate>
+    <div>
+      <ScheduleTitle>Schedule</ScheduleTitle>
+      <ScheduleTableDiv>
+        <ScheduleBlock>
+          <tbody>
+            {days.map(({ date, dayOfWeek, events }) => {
+              return (
+                <>
+                  <ScheduleDate>
+                    <td colSpan={3} style={{}}>
+                      <span style={{ float: "left", paddingLeft: "5px" }}>
+                        {date}
+                      </span>
+                      <span style={{ float: "right", paddingRight: "5px" }}>
+                        {dayOfWeek}
+                      </span>
+                    </td>
+                  </ScheduleDate>
 
-            <ul>
-              {events.map(({ title, time, location }) => {
-                return (
-                  <ScheduleEvent>
-                    <div>{title}</div>
-                    <div>{time}</div>
-                    <div>{location}</div>
-                  </ScheduleEvent>
-                );
-              })}
-            </ul>
-          </div>
-        );
-      })}
-    </ScheduleBlock>
+                  {events.map(({ title, time, location }) => {
+                    return (
+                      <ScheduleEvent>
+                        <ScheduleEventTime>{time}</ScheduleEventTime>
+                        <ScheduleEventTitle>{title}</ScheduleEventTitle>
+                        <ScheduleEventLocation>
+                          {location}
+                        </ScheduleEventLocation>
+                      </ScheduleEvent>
+                    );
+                  })}
+                </>
+              );
+            })}
+          </tbody>
+        </ScheduleBlock>
+      </ScheduleTableDiv>
+    </div>
   );
 };
 
