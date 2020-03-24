@@ -13,7 +13,7 @@ function LazyLoadedSections() {
       <AboutSection />
       <MissionSection />
       <FAQSection />
-      <LocationSection />
+      <LocationSection sectionNumber={3} />
       <PartnerSection />
       <SocialMediaSection />
     </BackgroundTheme>

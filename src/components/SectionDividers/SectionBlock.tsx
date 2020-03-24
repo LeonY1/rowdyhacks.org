@@ -66,7 +66,9 @@ function SectionBlock(props: sectionProps) {
         zindex: 4
       }
     },
-    { theme: { main: "#5faa86" } }
+    { theme: { main: "#5faa86" } },
+    { theme: { main: "#ffffff" } },
+    { theme: { main: "#fff6c2", margin: ((170 * screenWidth) / 1988) * -1 } }
   ];
 
   const sectionTheme = sectionColors[sectionNumber];
