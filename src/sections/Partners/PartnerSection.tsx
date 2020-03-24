@@ -15,7 +15,7 @@ import {
 
 function PartnerSection() {
   return (
-    <SectionBlock sectionNumber={4} id="partners">
+    <SectionBlock sectionNumber={6} id="partners">
       {{
         content: PartnerContent
       }}

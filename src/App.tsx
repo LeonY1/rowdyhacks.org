@@ -77,8 +77,7 @@ const DayOfEvent = () => {
       </Holder>
       <ScheduleSection />
       <FAQSection />
-      <LocationSection />
-      <SocialMediaSection />
+      <LocationSection sectionNumber={7} />
     </div>
   );
 };
