@@ -36,7 +36,7 @@ function HeroTitle() {
         {"ROWDYHACKS"}
       </TitleWrapper>
       <DateWrapper {...{ theme: { fontSize: fontSize(30) } }}>
-        {"March 28-29 2020 | UTSA MAIN CAMPUS"}
+        {"March 28-29 2020 | NOW COMPLETELY ONLINE"}
       </DateWrapper>
       <ButtonWrapper>
         <TitleButton
