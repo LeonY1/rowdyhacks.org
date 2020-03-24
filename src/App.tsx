@@ -18,6 +18,7 @@ const titleNames = [
   { title: "Tracks", link: "/#tracks" },
   { title: "FAQ", link: "/#faq" },
   { title: "Location", link: "/#location" },
+  { title: "Schedule", link: "/#schedule" },
   { title: "Partners", link: "/#partners" }
 ];
 
@@ -75,7 +76,7 @@ const DayOfEvent = () => {
       <Holder>
         <NavBar titles={titleNames} />
       </Holder>
-      <ScheduleSection />
+      <ScheduleSection sectionNumber={4} />
       <FAQSection />
       <LocationSection sectionNumber={7} />
     </div>

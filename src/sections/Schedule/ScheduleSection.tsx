@@ -9,14 +9,27 @@ import {
   ScheduleEventTime,
   ScheduleEventLocation,
   ScheduleTitle,
-  ScheduleTableDiv
+  ScheduleTableDiv,
+  ScheduleTableBody
 } from "./ScheduleStyle";
 
-function ScheduleSection() {
+interface ScheduleSectionProps {
+  sectionNumber: number;
+}
+
+function ScheduleSection(props: ScheduleSectionProps) {
+  const { sectionNumber } = props;
   return (
-    <SectionBlock sectionNumber={4} id="schedule">
+    <SectionBlock sectionNumber={sectionNumber} id="schedule">
       {{
-        content: Schedule
+        content: () => {
+          return (
+            <div style={{ width: "inherit" }}>
+              <ScheduleTitle {...props}>SCHEDULE</ScheduleTitle>
+              <Schedule />
+            </div>
+          );
+        }
       }}
     </SectionBlock>
   );
@@ -25,43 +38,38 @@ function ScheduleSection() {
 const Schedule: React.FC = () => {
   const { days } = ScheduleConstants;
   return (
-    <div>
-      <ScheduleTitle>Schedule</ScheduleTitle>
-      <ScheduleTableDiv>
-        <ScheduleBlock>
-          <tbody>
-            {days.map(({ date, dayOfWeek, events }) => {
-              return (
-                <>
-                  <ScheduleDate>
-                    <td colSpan={3} style={{}}>
-                      <span style={{ float: "left", paddingLeft: "5px" }}>
-                        {date}
-                      </span>
-                      <span style={{ float: "right", paddingRight: "5px" }}>
-                        {dayOfWeek}
-                      </span>
-                    </td>
-                  </ScheduleDate>
+    <ScheduleTableDiv>
+      <ScheduleBlock>
+        <ScheduleTableBody>
+          {days.map(({ date, dayOfWeek, events }) => {
+            return (
+              <>
+                <ScheduleDate>
+                  <td colSpan={3} style={{}}>
+                    <span style={{ float: "left", paddingLeft: "5px" }}>
+                      {date}
+                    </span>
+                    <span style={{ float: "right", paddingRight: "30px" }}>
+                      {dayOfWeek}
+                    </span>
+                  </td>
+                </ScheduleDate>
 
-                  {events.map(({ title, time, location }) => {
-                    return (
-                      <ScheduleEvent>
-                        <ScheduleEventTime>{time}</ScheduleEventTime>
-                        <ScheduleEventTitle>{title}</ScheduleEventTitle>
-                        <ScheduleEventLocation>
-                          {location}
-                        </ScheduleEventLocation>
-                      </ScheduleEvent>
-                    );
-                  })}
-                </>
-              );
-            })}
-          </tbody>
-        </ScheduleBlock>
-      </ScheduleTableDiv>
-    </div>
+                {events.map(({ title, time, location }) => {
+                  return (
+                    <ScheduleEvent>
+                      <ScheduleEventTime>{time}</ScheduleEventTime>
+                      <ScheduleEventTitle>{title}</ScheduleEventTitle>
+                      <ScheduleEventLocation>{location}</ScheduleEventLocation>
+                    </ScheduleEvent>
+                  );
+                })}
+              </>
+            );
+          })}
+        </ScheduleTableBody>
+      </ScheduleBlock>
+    </ScheduleTableDiv>
   );
 };
 
