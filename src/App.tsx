@@ -4,11 +4,14 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Hero from "./sections/Hero/Hero";
 import SocialMediaSection from "./sections/SocialMedia/SocialMediaSection";
+import FAQSection from "./sections/FAQ/FAQSection";
+import ScheduleSection from "./sections/Schedule/ScheduleSection";
 import UpdateSection from "./sections/Updates/UpdateSection";
 import GlobalFonts from "./fonts/fonts";
 import Alerts from "./components/Alerts";
 import { Holder } from "./AppStyle";
 import { NavBarMargin } from "./components/NavBar/NavBarStyle";
+import LocationSection from "./sections/Location/LocationSection";
 
 const titleNames = [
   { title: "About", link: "/#about" },
@@ -31,6 +34,7 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Switch>
           <Route path="/updates" component={Updates} />
+          <Route path="/day-of-event" component={DayOfEvent} />
           <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>
@@ -61,6 +65,19 @@ const Updates: React.FC = () => {
       </Holder>
       <UpdateSection />
       <SocialMediaSection />
+    </div>
+  );
+};
+
+const DayOfEvent = () => {
+  return (
+    <div>
+      <Holder>
+        <NavBar titles={titleNames} />
+      </Holder>
+      <ScheduleSection />
+      <FAQSection />
+      <LocationSection sectionNumber={7} />
     </div>
   );
 };
