@@ -151,10 +151,15 @@ const ScheduleConstants = {
         {
           title: "MLH Side Event: CTF",
           time: "4:00 PM",
-          location: "TBD"
+          location: "Discord"
         },
         {
           title: "Learners Workshop #3: Intro to Web Development",
+          time: "4:30 PM",
+          location: "Zoom (Archives on Youtube)"
+        },
+        {
+          title: "General Workshop: Intro to AWS",
           time: "4:30 PM",
           location: "Zoom (Archives on Youtube)"
         },
@@ -176,7 +181,7 @@ const ScheduleConstants = {
         {
           title: "MLH Side Event: Slideshow Karaoke",
           time: "9:00 PM",
-          location: "TBD"
+          location: "Discord"
         }
       ]
     },
