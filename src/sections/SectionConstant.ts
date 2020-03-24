@@ -100,6 +100,7 @@ const ScheduleConstants = {
   days: [
     {
       date: "March 28th",
+      dayOfWeek: "Saturday",
       events: [
         {
           title: "Check-in Begins",
@@ -107,9 +108,9 @@ const ScheduleConstants = {
           location: "Discord"
         },
         {
-          title: "Virtual Tabling Begins on Discord",
+          title: "Virtual Tabling",
           time: "9:00 AM",
-          location: "Zoom"
+          location: "Zoom (Sign up for time slots on Discord)"
         },
         {
           title: "Opening Ceremony",
@@ -117,9 +118,9 @@ const ScheduleConstants = {
           location: "Youtube"
         },
         {
-          title: "Virtual Tabling Continues on Discord",
+          title: "Virtual Tabling Continues",
           time: "12:00 PM",
-          location: "Zoom"
+          location: "Zoom (Sign up for time slots on Discord)"
         },
         {
           title: "Google Workshop #1: Google Geo",
@@ -186,6 +187,7 @@ const ScheduleConstants = {
     },
     {
       date: "March 29th",
+      dayOfWeek: "Sunday",
       events: [
         {
           title: "Bob Ross with Microsoft Paint",
