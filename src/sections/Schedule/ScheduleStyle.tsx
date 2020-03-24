@@ -6,20 +6,28 @@ const ScheduleTableDiv = styled.div`
   word-wrap: break-word;
   background-color: #444;
   border-radius: 2px;
-  margin-bottom: 70px;
+  margin: 0px 250px 70px 250px;
   border: 2px solid #444;
+  width: inherit;
+  @media (max-width: 800px) {
+    margin: 0px 0px 30px;
+  }
 `;
 
 const ScheduleBlock = styled.table`
   table-layout: auto;
   border-style: none;
   border-collapse: collapse;
+  width: 1200px;
+  @media (max-width: 800px) {
+    width: auto;
+  }
 `;
 
 const ScheduleDate = styled.tr`
   font-family: Arial-Black;
   color: #ffffff;
-  width: parent;
+  max-width: 1200px;
   border-top: 1px solid #333333;
   height: 40px;
 `;
@@ -46,14 +54,27 @@ const ScheduleEventTime = styled.td`
 const ScheduleEventLocation = styled.td`
   max-width: 300px;
   text-align: right;
+  padding-right: 30px;
+  @media (max-width: 800px) {
+    padding-right: 10px;
+  }
 `;
 
-const ScheduleTitle = styled.div`
+interface ScheduleTitleProps {
+  sectionNumber: number;
+}
+
+const ScheduleTitle = styled.div<ScheduleTitleProps>`
   font-size: 55px;
   font-family: Arial-Black;
   margin-bottom: 30px;
-  color: #4d4d4d;
+  color: ${props => (props.sectionNumber === 8 ? "#ffffff" : "#4d4d4d")};
 `;
+
+const ScheduleTableBody = styled.tbody`
+  width: 1500px;
+`;
+
 export {
   ScheduleBlock,
   ScheduleDate,
@@ -62,5 +83,6 @@ export {
   ScheduleEventTime,
   ScheduleEventLocation,
   ScheduleTitle,
-  ScheduleTableDiv
+  ScheduleTableDiv,
+  ScheduleTableBody
 };
