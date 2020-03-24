@@ -57,8 +57,28 @@ function SectionBlock(props: sectionProps) {
         zindex: 1
       }
     },
+    {
+      theme: {
+        mainImage: "linear-gradient(to bottom, #cbebe8, #5faa86)",
+        src: "banner-green",
+        altName: "greenBanner",
+        margin: 0,
+        zindex: 4
+      }
+    },
+    { theme: { main: "#5faa86" } },
     { theme: { main: "#ffffff" } },
-    { theme: { main: "#5faa86" } }
+    { theme: { main: "#fff6c2", margin: ((170 * screenWidth) / 1988) * -1 } },
+
+    {
+      theme: {
+        main: "#5faa86",
+        src: "banner-green",
+        altName: "greenBanner",
+        margin: ((170 * screenWidth) / 1988) * -1,
+        zindex: 0
+      }
+    }
   ];
 
   const sectionTheme = sectionColors[sectionNumber];
