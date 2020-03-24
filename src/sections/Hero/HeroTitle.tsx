@@ -41,6 +41,13 @@ function HeroTitle() {
       <ButtonWrapper>
         <TitleButton
           onClick={() => {
+            window.location.href = "/day-of-event";
+          }}
+        >
+          Day Of Event Information
+        </TitleButton>
+        <TitleButton
+          onClick={() => {
             window.location.href = "https://rowdyhacks.typeform.com/to/ImTIU6";
           }}
         >
