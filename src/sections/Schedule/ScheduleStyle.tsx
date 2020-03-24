@@ -6,7 +6,7 @@ const ScheduleTableDiv = styled.div`
   word-wrap: break-word;
   background-color: #444;
   border-radius: 2px;
-  margin: 0px 250px 70px 250px;
+  margin-bottom: 70px;
   border: 2px solid #444;
   width: inherit;
   @media (max-width: 800px) {
