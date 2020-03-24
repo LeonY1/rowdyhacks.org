@@ -164,12 +164,7 @@ const ScheduleConstants = {
           location: "Discord"
         },
         {
-          title: "Learners Workshop #4: Computer Vision",
-          time: "6:00 PM",
-          location: "Zoom (Archives on Youtube)"
-        },
-        {
-          title: "Learners Workshop #5: The Importance of UI/UX",
+          title: "Learners Workshop #4: The Importance of UI/UX",
           time: "7:30 PM",
           location: "Zoom (Archives on Youtube)"
         },
