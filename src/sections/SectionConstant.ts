@@ -159,11 +159,6 @@ const ScheduleConstants = {
           location: "Zoom (Archives on Youtube)"
         },
         {
-          title: "General Workshop: Intro to AWS",
-          time: "4:30 PM",
-          location: "Zoom (Archives on Youtube)"
-        },
-        {
           title: "Loteria (Mexican Bingo) Activity",
           time: "5:00 PM",
           location: "Discord"
