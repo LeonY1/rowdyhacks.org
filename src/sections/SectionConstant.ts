@@ -123,7 +123,7 @@ const ScheduleConstants = {
           location: "Zoom (Sign up for time slots on Discord)"
         },
         {
-          title: "Google Workshop #1: Google Geo",
+          title: "Google Workshop: Google Geo",
           time: "1:30 PM",
           location: "Google Hangouts"
         },
@@ -139,7 +139,7 @@ const ScheduleConstants = {
           location: "Zoom (Archives will be on Youtube)"
         },
         {
-          title: "Google Workshop #2: Open-source API",
+          title: "Google Workshop: Open-source API",
           time: "2:30 PM",
           location: "Google Hangouts"
         },
@@ -164,6 +164,11 @@ const ScheduleConstants = {
           location: "Discord"
         },
         {
+          title: " Q&A with the Father of Python Guido van Rossum",
+          time: "6:00 PM",
+          location: "twitch.tv/twilio"
+        },
+        {
           title: "Learners Workshop #4: The Importance of UI/UX",
           time: "7:30 PM",
           location: "Zoom (Archives on Youtube)"
@@ -185,7 +190,7 @@ const ScheduleConstants = {
       dayOfWeek: "Sunday",
       events: [
         {
-          title: "Bob Ross with Microsoft Paint",
+          title: "MS Painting with Bob Ross",
           time: "12:30 AM",
           location: "Discord"
         },
