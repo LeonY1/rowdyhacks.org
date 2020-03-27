@@ -118,12 +118,17 @@ const ScheduleConstants = {
           location: "Youtube"
         },
         {
+          title: "Hacking Begins",
+          time: "12:00 PM",
+          location: ""
+        },
+        {
           title: "Virtual Tabling Continues",
           time: "12:00 PM",
           location: "Zoom (Sign up for time slots on Discord)"
         },
         {
-          title: "Google Workshop: Google Geo",
+          title: "Google Workshop #1: Google Geo",
           time: "1:30 PM",
           location: "Google Hangouts"
         },
@@ -139,7 +144,7 @@ const ScheduleConstants = {
           location: "Zoom (Archives will be on Youtube)"
         },
         {
-          title: "Google Workshop: Open-source API",
+          title: "Google Workshop #2: Open-source API",
           time: "2:30 PM",
           location: "Google Hangouts"
         },
@@ -166,7 +171,7 @@ const ScheduleConstants = {
         {
           title: " Q&A with the Father of Python Guido van Rossum",
           time: "6:00 PM",
-          location: "twitch.tv/twilio"
+          location: "Twitch Link: twitch.tv/twilio"
         },
         {
           title: "Learners Workshop #4: The Importance of UI/UX",
