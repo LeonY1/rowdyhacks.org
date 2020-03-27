@@ -12,6 +12,7 @@ import {
   ScheduleTableDiv,
   ScheduleTableBody
 } from "./ScheduleStyle";
+import Linkify from "linkifyjs/react";
 
 interface ScheduleSectionProps {
   sectionNumber: number;
@@ -60,7 +61,9 @@ const Schedule: React.FC = () => {
                     <ScheduleEvent>
                       <ScheduleEventTime>{time}</ScheduleEventTime>
                       <ScheduleEventTitle>{title}</ScheduleEventTitle>
-                      <ScheduleEventLocation>{location}</ScheduleEventLocation>
+                      <ScheduleEventLocation>
+                        <Linkify>{location}</Linkify>
+                      </ScheduleEventLocation>
                     </ScheduleEvent>
                   );
                 })}
