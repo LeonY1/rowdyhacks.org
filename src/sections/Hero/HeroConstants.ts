@@ -39,6 +39,15 @@ const animationObjects: Array<AnimationInput> = [
     width: 250
   },
   {
+    imageSrc: "violin_ducky",
+    direction: "left",
+    startTime: 14000,
+    endTime: 27000,
+    top: 580,
+    margin: -235,
+    width: 40
+  },
+  {
     imageSrc: "blueBoat",
     direction: "left",
     startTime: 1000,
