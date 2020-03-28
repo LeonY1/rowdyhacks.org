@@ -66,9 +66,6 @@ const UpdateSection: React.FC = () => {
                     {message.map(paragraph => {
                       return <UpdateParagraph>{paragraph}</UpdateParagraph>;
                     })}
-                    {index === 0 && (
-                      <Duck src={trumpetDuck} alt="trumpet-duck" />
-                    )}
                   </UpdateBlockSection>
                 );
               })}
