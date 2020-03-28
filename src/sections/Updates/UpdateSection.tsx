@@ -12,12 +12,10 @@ import {
   VerticalDivider,
   UpdateListItem,
   UpdateTableTitle,
-  UpdateTable,
-  Duck
+  UpdateTable
 } from "./UpdateStyle";
 import { UpdatesConstants } from "../SectionConstant";
 import useWindowWidth from "../../hooks/useWindowWidth";
-import trumpetDuck from "../../static/trumpet_ducky.png";
 
 const UpdateSection: React.FC = () => {
   const { updates } = UpdatesConstants;
