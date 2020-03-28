@@ -96,6 +96,11 @@ const UpdateMessageSection = styled.div`
   flex-direction: column;
 `;
 
+const Duck = styled.img`
+  max-height: 30px;
+  max-width: 30px;
+`;
+
 export {
   UpdateTheme,
   UpdateTopMargin,
@@ -109,5 +114,6 @@ export {
   UpdateListItem,
   UpdateTableTitle,
   UpdateTable,
-  UpdateMessageSection
+  UpdateMessageSection,
+  Duck
 };
