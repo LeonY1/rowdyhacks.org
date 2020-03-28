@@ -12,10 +12,12 @@ import {
   VerticalDivider,
   UpdateListItem,
   UpdateTableTitle,
-  UpdateTable
+  UpdateTable,
+  Duck
 } from "./UpdateStyle";
 import { UpdatesConstants } from "../SectionConstant";
 import useWindowWidth from "../../hooks/useWindowWidth";
+import trumpetDuck from "../../static/trumpet_ducky.png";
 
 const UpdateSection: React.FC = () => {
   const { updates } = UpdatesConstants;
@@ -53,7 +55,7 @@ const UpdateSection: React.FC = () => {
             {updates
               .slice()
               .reverse()
-              .map(({ title, date, message }) => {
+              .map(({ title, date, message }, index) => {
                 return (
                   <UpdateBlockSection
                     key={date.toLowerCase()}
@@ -64,6 +66,9 @@ const UpdateSection: React.FC = () => {
                     {message.map(paragraph => {
                       return <UpdateParagraph>{paragraph}</UpdateParagraph>;
                     })}
+                    {index === 0 && (
+                      <Duck src={trumpetDuck} alt="trumpet-duck" />
+                    )}
                   </UpdateBlockSection>
                 );
               })}
