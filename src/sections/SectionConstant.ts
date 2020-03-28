@@ -104,88 +104,88 @@ const ScheduleConstants = {
       events: [
         {
           title: "Check-in Begins",
-          time: "8:00 AM CDT",
+          time: "8:00 AM CST",
           location: "Discord"
         },
         {
           title: "Virtual Tabling",
-          time: "9:00 AM CDT",
+          time: "9:00 AM CST",
           location: "Zoom (Sign up for time slots on Discord)"
         },
         {
           title: "Opening Ceremony",
-          time: "11:00 AM CDT",
+          time: "11:00 AM CST",
           location: "Youtube"
         },
         {
           title: "Hacking Begins",
-          time: "12:00 PM CDT",
+          time: "12:00 PM CST",
           location: ""
         },
         {
           title: "Virtual Tabling Continues",
-          time: "12:00 PM CDT",
+          time: "12:00 PM CST",
           location: "Zoom (Sign up for time slots on Discord)"
         },
         {
           title: "Google Workshop #1: Google Geo",
-          time: "1:30 PM CDT",
+          time: "1:30 PM CST",
           location: "Google Hangouts"
         },
         {
           title: "Learners Workshop #1: Git/Github",
-          time: "1:30 PM CDT",
+          time: "1:30 PM CST",
           location: "Zoom (Archives on Youtube)"
         },
         {
           title:
             "TechData Workshop: Tools to Increase Security Posture from IBM",
-          time: "1:30 PM CDT",
+          time: "1:30 PM CST",
           location: "Zoom (Archives will be on Youtube)"
         },
         {
           title: "Google Workshop #2: Open-source API",
-          time: "2:30 PM CDT",
+          time: "2:30 PM CST",
           location: "Google Hangouts"
         },
         {
           title: "Learners Workshop #2: Intro to Java",
-          time: "3:00 PM CDT",
+          time: "3:00 PM CST",
           location: "Zoom (Archives on Youtube)"
         },
         {
           title: "MLH Side Event: CTF",
-          time: "4:00 PM CDT",
+          time: "4:00 PM CST",
           location: "Discord"
         },
         {
           title: "Learners Workshop #3: Intro to Web Development",
-          time: "4:30 PM CDT",
+          time: "4:30 PM CST",
           location: "Zoom (Archives on Youtube)"
         },
         {
           title: "Loteria (Mexican Bingo) Activity",
-          time: "5:00 PM CDT",
+          time: "5:00 PM CST",
           location: "Discord"
         },
         {
           title: " Q&A with the Father of Python Guido van Rossum",
-          time: "6:00 PM CDT",
+          time: "6:00 PM CST",
           location: "Twitch Link: twitch.tv/twilio"
         },
         {
           title: "Learners Workshop #4: The Importance of UI/UX",
-          time: "7:30 PM CDT",
+          time: "7:30 PM CST",
           location: "Zoom (Archives on Youtube)"
         },
         {
           title: "Loteria (Mexican Bingo) Activity",
-          time: "8:30 PM CDT",
+          time: "8:30 PM CST",
           location: "Discord"
         },
         {
           title: "MLH Side Event: Slideshow Karaoke",
-          time: "9:00 PM CDT",
+          time: "9:00 PM CST",
           location: "Discord"
         }
       ]
@@ -196,32 +196,32 @@ const ScheduleConstants = {
       events: [
         {
           title: "MS Painting with Bob Ross",
-          time: "12:30 AM CDT",
+          time: "12:30 AM CST",
           location: "Discord"
         },
         {
           title: "Loteria (Mexican Bingo) Activity",
-          time: "8:00 AM CDT",
+          time: "8:00 AM CST",
           location: "Discord"
         },
         {
           title: "Submissions Due",
-          time: "12:00 PM CDT",
+          time: "12:00 PM CST",
           location: "Devpost"
         },
         {
           title: "Hacking Ends and Judging Begins",
-          time: "1:00 PM CDT",
+          time: "1:00 PM CST",
           location: "Devpost"
         },
         {
           title: "Closing Ceremony",
-          time: "3:00 PM CDT",
+          time: "3:00 PM CST",
           location: "Youtube"
         },
         {
           title: "Event Ends",
-          time: "4:00 PM CDT",
+          time: "4:00 PM CST",
           location: ""
         }
       ]

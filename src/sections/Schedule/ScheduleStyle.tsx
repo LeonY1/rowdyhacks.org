@@ -47,7 +47,7 @@ const ScheduleEvent = styled.tr`
 const ScheduleEventTitle = styled.td``;
 
 const ScheduleEventTime = styled.td`
-  width: 100px;
+  width: 150px;
   padding-left: 10px;
 `;
 
