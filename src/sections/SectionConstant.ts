@@ -169,6 +169,11 @@ const ScheduleConstants = {
           location: "Discord"
         },
         {
+          title: "TechData Cyber Range Challenge",
+          time: "5:00 PM CST",
+          location: "Discord"
+        },
+        {
           title: " Q&A with the Father of Python Guido van Rossum",
           time: "6:00 PM CST",
           location: "Twitch Link: twitch.tv/twilio"
